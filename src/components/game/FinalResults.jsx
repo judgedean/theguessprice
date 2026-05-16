@@ -17,18 +17,33 @@ export default function FinalResults({ rounds, onRestart }) {
   const { grade, label, color } = getFinalGrade(totalScore);
   const [copied, setCopied] = useState(false);
 
-  const shareMessage = `I just scored ${totalScore} pts and ranked as a '${label}' on Guess The Price! 🎯 Can you guess the price of a Hot Dog Toaster better than me? Play here: ${window.location.href}`;
+  const shareMessage = `I just scored ${totalScore} pts and ranked as a '${label}' on Guess The Price! 🎯 Can you beat me? Play here: ${window.location.href}`;
 
   const handleShare = async () => {
-    if (navigator.share) {
+    const canNativeShare = typeof navigator.share === "function";
+    if (canNativeShare) {
       try {
         await navigator.share({ text: shareMessage });
-      } catch (_) {}
-    } else {
-      await navigator.clipboard.writeText(shareMessage);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+        return;
+      } catch (_) {
+        // user cancelled or share failed — fall through to clipboard
+      }
     }
+    try {
+      await navigator.clipboard.writeText(shareMessage);
+    } catch (_) {
+      // clipboard API blocked (e.g. iframe) — use legacy execCommand
+      const el = document.createElement("textarea");
+      el.value = shareMessage;
+      el.style.position = "fixed";
+      el.style.opacity = "0";
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+    }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   useEffect(() => {
@@ -144,7 +159,7 @@ export default function FinalResults({ rounds, onRestart }) {
         >
           {copied
             ? <><Check className="w-4 h-4" /><span>Copied!</span></>
-            : navigator.share
+            : typeof navigator.share === "function"
             ? <><Share2 className="w-4 h-4" /><span>Share</span></>
             : <><Copy className="w-4 h-4" /><span>Copy</span></>
           }
