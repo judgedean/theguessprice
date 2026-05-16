@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
+import { Share2, Copy, Check } from "lucide-react";
 import { getFinalGrade, formatPrice, calculateScore, sliderToPrice, getScoreLabel } from "@/lib/gameUtils";
 
 const gradeColors = {
@@ -14,6 +15,21 @@ const gradeColors = {
 export default function FinalResults({ rounds, onRestart }) {
   const totalScore = rounds.reduce((sum, r) => sum + calculateScore(sliderToPrice(r.sliderValue), r.product.price), 0);
   const { grade, label, color } = getFinalGrade(totalScore);
+  const [copied, setCopied] = useState(false);
+
+  const shareMessage = `I just scored ${totalScore} pts and ranked as a '${label}' on Guess The Price! 🎯 Can you guess the price of a Hot Dog Toaster better than me? Play here: ${window.location.href}`;
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ text: shareMessage });
+      } catch (_) {}
+    } else {
+      await navigator.clipboard.writeText(shareMessage);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
 
   useEffect(() => {
     if (totalScore >= 400) {
@@ -109,16 +125,31 @@ export default function FinalResults({ rounds, onRestart }) {
         </div>
       </div>
 
-      {/* Restart */}
-      <motion.button
+      {/* Restart + Share */}
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        onClick={onRestart}
-        className="w-full py-4 rounded-xl font-bold text-sm tracking-widest uppercase font-mono bg-neon text-primary-foreground neon-glow hover:opacity-90 transition-opacity"
+        className="flex gap-3"
       >
-        Play Again ↺
-      </motion.button>
+        <button
+          onClick={onRestart}
+          className="flex-1 py-4 rounded-xl font-bold text-sm tracking-widest uppercase font-mono bg-neon text-primary-foreground neon-glow hover:opacity-90 transition-opacity"
+        >
+          Play Again ↺
+        </button>
+        <button
+          onClick={handleShare}
+          className="flex items-center justify-center gap-2 px-5 py-4 rounded-xl font-bold text-sm tracking-widest uppercase font-mono border border-neon/50 text-neon hover:bg-neon/10 transition-colors"
+        >
+          {copied
+            ? <><Check className="w-4 h-4" /><span>Copied!</span></>
+            : navigator.share
+            ? <><Share2 className="w-4 h-4" /><span>Share</span></>
+            : <><Copy className="w-4 h-4" /><span>Copy</span></>
+          }
+        </button>
+      </motion.div>
     </motion.div>
   );
 }
