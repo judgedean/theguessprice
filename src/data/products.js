@@ -1,12 +1,13 @@
 export const PRODUCTS = [
+  // --- ORIGINAL 15 ---
   {
     id: 1,
-    name: "Nicolas Cage Pillow Case",
-    description: "Full-face Nicolas Cage printed on a standard pillowcase. Stare into his eyes every night.",
+    name: "Nicolas Cage Sequin Pillow",
+    description: "Full-face Nicolas Cage on a reversible sequin pillowcase. Stroke it one way for calm Nic, the other for CAGE RAGE.",
     emoji: "😐",
-    price: 12.99,
+    price: 24.99,
     source: "Amazon",
-    category: "Home Decor"
+    category: "Bizarre Decor"
   },
   {
     id: 2,
@@ -24,7 +25,7 @@ export const PRODUCTS = [
     emoji: "🌭",
     price: 29.99,
     source: "Amazon",
-    category: "Kitchen"
+    category: "Niche Kitchen"
   },
   {
     id: 4,
@@ -60,7 +61,7 @@ export const PRODUCTS = [
     emoji: "🍌",
     price: 3.99,
     source: "Amazon",
-    category: "Kitchen"
+    category: "Niche Kitchen"
   },
   {
     id: 8,
@@ -87,7 +88,7 @@ export const PRODUCTS = [
     emoji: "🎸",
     price: 5.99,
     source: "Spencer's",
-    category: "Music"
+    category: "Novelty"
   },
   {
     id: 11,
@@ -96,7 +97,7 @@ export const PRODUCTS = [
     emoji: "💀",
     price: 45.00,
     source: "Amazon",
-    category: "Decor"
+    category: "Bizarre Decor"
   },
   {
     id: 12,
@@ -118,12 +119,12 @@ export const PRODUCTS = [
   },
   {
     id: 14,
-    name: "Wifi-Connected Smart Egg Tray",
+    name: "Wi-Fi Connected Smart Egg Tray",
     description: "Tracks how many eggs you have via smartphone app. The innovation we truly deserved.",
     emoji: "🥚",
     price: 69.99,
     source: "Amazon",
-    category: "Smart Home"
+    category: "Tech & Gadgets"
   },
   {
     id: 15,
@@ -132,7 +133,782 @@ export const PRODUCTS = [
     emoji: "🚽",
     price: 149.99,
     source: "Hammacher Schlemmer",
-    category: "Luxury"
+    category: "Luxury Scams"
+  },
+
+  // --- TECH & GADGETS ---
+  {
+    id: 16,
+    name: "USB Floppy Disk Drive",
+    description: "Relive 1994 with this retro USB floppy reader. Works great for the 3.5\" disks in your attic.",
+    emoji: "💾",
+    price: 22.99,
+    source: "Amazon",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 17,
+    name: "HiMirror Smart Hairbrush",
+    description: "Bluetooth hairbrush that analyzes your hair quality and judges you silently through an app.",
+    emoji: "💇",
+    price: 199.00,
+    source: "HiMirror",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 18,
+    name: "Secretlab Titan Gaming Chair",
+    description: "2,000-dollar gaming throne with lumbar support, magnetic armrests, and an identity crisis included.",
+    emoji: "🎮",
+    price: 1999.00,
+    source: "Secretlab",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 19,
+    name: "Smart Butter Warmer Knife",
+    description: "USB-heated knife that melts cold butter on contact. For the impatient breakfast chef.",
+    emoji: "🧈",
+    price: 34.99,
+    source: "Amazon",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 20,
+    name: "Pet Rock 2.0 (with Bluetooth)",
+    description: "A smooth rock. With a Bluetooth speaker inside. It connects to your phone. Rocks.",
+    emoji: "🪨",
+    price: 39.99,
+    source: "Amazon",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 21,
+    name: "Selfie Toaster",
+    description: "Upload your face, it burns your portrait onto toast every morning. True vanity.",
+    emoji: "🍞",
+    price: 79.99,
+    source: "Vermont Novelty Toaster Corp",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 22,
+    name: "Smart Fork (HAPIfork)",
+    description: "Vibrates when you eat too fast and sends shame data to your phone. You can't outrun tech.",
+    emoji: "🍴",
+    price: 99.00,
+    source: "HAPILABS",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 23,
+    name: "iSpoon (Luxury Coffee Stirrer)",
+    description: "Stainless steel app-connected stirrer that measures coffee temperature and acts smug about it.",
+    emoji: "☕",
+    price: 49.99,
+    source: "Brookstone",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 24,
+    name: "LG CineBeam Laser Projector",
+    description: "4K ultra-short throw projector that turns any wall into a 120\" TV. Requires selling a kidney.",
+    emoji: "📽️",
+    price: 2999.00,
+    source: "LG",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 25,
+    name: "USB Pet Rock Heater",
+    description: "A USB-powered heated platform so your pet rock stays warm. We don't know either.",
+    emoji: "🔌",
+    price: 12.99,
+    source: "Amazon",
+    category: "Tech & Gadgets"
+  },
+
+  // --- BIZARRE DECOR ---
+  {
+    id: 26,
+    name: "Life-Sized Bigfoot Garden Statue",
+    description: "7-foot tall concrete Bigfoot for your yard. Made him look friendly. He is not.",
+    emoji: "🦶",
+    price: 349.00,
+    source: "Wayfair",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 27,
+    name: "Squirrel Picnic Table",
+    description: "Tiny wooden picnic table that mounts to a tree so squirrels can dine in style.",
+    emoji: "🐿️",
+    price: 21.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 28,
+    name: "Horse Head Mask",
+    description: "Full-size latex horse head mask. Perfect for job interviews, family photos, or Zoom calls.",
+    emoji: "🐴",
+    price: 29.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 29,
+    name: "Giant Gummy Bear (5 lbs)",
+    description: "A single bear-shaped gummy weighing 5 pounds. 12,600 calories. It stares into your soul.",
+    emoji: "🐻",
+    price: 39.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 30,
+    name: "Flamingo Lawn Gnome Hybrid",
+    description: "Half-gnome, half-flamingo garden statue. Neither species endorses this product.",
+    emoji: "🦩",
+    price: 44.99,
+    source: "Etsy",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 31,
+    name: "Crying Cat Plushie (Big Size)",
+    description: "Giant plush version of the crying cat meme. 24 inches of pure sorrow.",
+    emoji: "😿",
+    price: 36.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 32,
+    name: "Toilet Golf Putting Set",
+    description: "Full mini-golf putting set designed for bathroom use. Par for the porcelain.",
+    emoji: "⛳",
+    price: 18.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 33,
+    name: "Disco Ball Chandelier (3 ft)",
+    description: "Giant rotating disco ball for your dining room. Dinner party hits differently.",
+    emoji: "🪩",
+    price: 189.00,
+    source: "Wayfair",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 34,
+    name: "Neon Sign: 'But First, Coffee'",
+    description: "Hand-bent LED neon sign in millennial pink. Ironic. Also sincerely meant.",
+    emoji: "☕",
+    price: 69.99,
+    source: "Etsy",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 35,
+    name: "Moose Head Wall Mount (Fake)",
+    description: "Faux taxidermy moose head in bubblegum pink. He's named Gerald. He judges you.",
+    emoji: "🫎",
+    price: 79.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+
+  // --- LUXURY SCAMS ---
+  {
+    id: 36,
+    name: "Goldgenie 24K Gold Paperclip",
+    description: "A single paperclip. Dipped in 24-karat gold. Holds 5–10 sheets. Extremely official.",
+    emoji: "📎",
+    price: 95.00,
+    source: "Goldgenie",
+    category: "Luxury Scams"
+  },
+  {
+    id: 37,
+    name: "Gläce Luxury Ice (Box of 50)",
+    description: "Artisanal hand-carved ice cubes for cocktails. Harvested from 'pure water'. It melts.",
+    emoji: "🧊",
+    price: 325.00,
+    source: "Gläce Luxury Ice",
+    category: "Luxury Scams"
+  },
+  {
+    id: 38,
+    name: "Hermès Leather Paperclip",
+    description: "A single leather-wrapped paperclip by Hermès. Ships in an orange box. Does nothing special.",
+    emoji: "🟠",
+    price: 250.00,
+    source: "Hermès",
+    category: "Luxury Scams"
+  },
+  {
+    id: 39,
+    name: "Evian Facial Spray (150ml)",
+    description: "Evian water in a spray can. For your face. Because tap water is for poor people.",
+    emoji: "💦",
+    price: 18.00,
+    source: "Sephora",
+    category: "Luxury Scams"
+  },
+  {
+    id: 40,
+    name: "Supreme Brick",
+    description: "A red ceramic brick silk-screened with the Supreme logo. Sold out in 30 seconds in 2016.",
+    emoji: "🧱",
+    price: 30.00,
+    source: "Supreme",
+    category: "Luxury Scams"
+  },
+  {
+    id: 41,
+    name: "Gold Flake Vodka (1L)",
+    description: "Vodka with 23k edible gold flakes suspended in it. The flakes do nothing. Tastes like vodka.",
+    emoji: "🍸",
+    price: 249.99,
+    source: "Goldschläger",
+    category: "Luxury Scams"
+  },
+  {
+    id: 42,
+    name: "Bottega Veneta Leather Stapler",
+    description: "A hand-stitched Italian leather stapler. For the executive who staples in style.",
+    emoji: "📌",
+    price: 890.00,
+    source: "Bottega Veneta",
+    category: "Luxury Scams"
+  },
+  {
+    id: 43,
+    name: "Kopi Luwak Coffee (250g)",
+    description: "Coffee beans that were eaten and excreted by civets. Costs more than your electric bill.",
+    emoji: "☕",
+    price: 149.00,
+    source: "Amazon",
+    category: "Luxury Scams"
+  },
+  {
+    id: 44,
+    name: "Baccarat Crystal Harmonica",
+    description: "Full-size glass harmonica made from hand-cut Baccarat crystal. Sounds amazing. Breaks easily.",
+    emoji: "🎵",
+    price: 3200.00,
+    source: "Baccarat",
+    category: "Luxury Scams"
+  },
+  {
+    id: 45,
+    name: "Louis Vuitton Monogram Ping Pong Set",
+    description: "Two paddles and three balls in a LV monogram case. Pong, but make it fashion.",
+    emoji: "🏓",
+    price: 840.00,
+    source: "Louis Vuitton",
+    category: "Luxury Scams"
+  },
+
+  // --- NICHE KITCHEN ---
+  {
+    id: 46,
+    name: "Electric Banana Slicer Pro",
+    description: "Motorized appliance that slices bananas with zero effort. Has 3 speed settings. For bananas.",
+    emoji: "🍌",
+    price: 49.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 47,
+    name: "OXO Avocado Pitter & Slicer",
+    description: "3-in-1 tool that splits, pits, and slices avocados. The millennial survival kit essential.",
+    emoji: "🥑",
+    price: 14.99,
+    source: "OXO",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 48,
+    name: "Electric Heated Butter Knife",
+    description: "USB-charged blade that warms to 104°F for effortless spreading. Cold butter, defeated.",
+    emoji: "🧈",
+    price: 27.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 49,
+    name: "Pineapple Corer & Slicer",
+    description: "Drill-shaped gadget that cores and spirals a whole pineapple in 5 seconds. Hypnotizing.",
+    emoji: "🍍",
+    price: 9.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 50,
+    name: "Electric Quesadilla Maker",
+    description: "Non-stick round press that makes perfectly folded quesadillas. No pan. No skill. No problem.",
+    emoji: "🫓",
+    price: 24.99,
+    source: "Hamilton Beach",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 51,
+    name: "Strawberry Huller Tool",
+    description: "Spring-loaded metal pin that removes strawberry stems. The most niche tool ever to be sold.",
+    emoji: "🍓",
+    price: 6.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 52,
+    name: "Corn Stripper Cob Zipper",
+    description: "Slides down an ear of corn, stripping the kernels in one swipe. Wildly satisfying.",
+    emoji: "🌽",
+    price: 11.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 53,
+    name: "Automatic Pan Stirrer with Timer",
+    description: "Motorized stirrer that sits in your pot and stirs sauce so you don't have to. Life-changing laziness.",
+    emoji: "🍲",
+    price: 18.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 54,
+    name: "Cherry Pitter (12-Cherry Batch)",
+    description: "Simultaneously pits 12 cherries in one press. Inefficient for everything else. Perfect for cherries.",
+    emoji: "🍒",
+    price: 22.99,
+    source: "OXO",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 55,
+    name: "Egg Separator Yolk Sucker",
+    description: "Silicone bulb that sucks up yolks with gentle pressure. Has a little face on it. He's happy.",
+    emoji: "🥚",
+    price: 5.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 56,
+    name: "Spaghetti Measuring Tool",
+    description: "A stainless disc with holes sized for 1, 2, 3, or 4 servings of dry pasta. Precision carbs.",
+    emoji: "🍝",
+    price: 7.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 57,
+    name: "Breakfast Sandwich Maker",
+    description: "Hamilton Beach gadget that layers egg, meat, and English muffin into a perfect sandwich in 5 minutes.",
+    emoji: "🥪",
+    price: 29.99,
+    source: "Hamilton Beach",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 58,
+    name: "Ramen Cooker Mug (Microwave)",
+    description: "Self-contained microwave ramen cooker. Bowl, strainer, and lid in one. College tier dining.",
+    emoji: "🍜",
+    price: 12.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 59,
+    name: "Onion Goggles",
+    description: "Anti-fog lab goggles specifically designed so you don't cry while cutting onions. Fashion optional.",
+    emoji: "🧅",
+    price: 19.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 60,
+    name: "Watermelon Slicer Tongs",
+    description: "Giant stainless tongs that core and slice a watermelon in a single click. Summer's MVP.",
+    emoji: "🍉",
+    price: 15.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+
+  // --- MORE BIZARRE & FUNNY ---
+  {
+    id: 61,
+    name: "Daddle (Saddle for Dad's Back)",
+    description: "A saddle that straps to dad's back so kids can ride him like a horse. Dad not included.",
+    emoji: "🐎",
+    price: 35.00,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 62,
+    name: "Potty Putter Toilet Golf Set",
+    description: "Full putting green that rolls out from under the toilet. Par 2. 1–3 minute play sessions.",
+    emoji: "⛳",
+    price: 24.99,
+    source: "Amazon",
+    category: "Novelty"
+  },
+  {
+    id: 63,
+    name: "Donald Trump Chia Pet",
+    description: "Grow Trump's famous hair using actual chia seeds. Waters itself. Legally distinct from a comment.",
+    emoji: "🌱",
+    price: 16.99,
+    source: "Amazon",
+    category: "Novelty"
+  },
+  {
+    id: 64,
+    name: "Remote-Controlled Tarantula",
+    description: "Life-sized RC tarantula with realistic leg movement. Ships with 'you knew what this was' disclaimer.",
+    emoji: "🕷️",
+    price: 27.99,
+    source: "Amazon",
+    category: "Toys"
+  },
+  {
+    id: 65,
+    name: "Inflatable Sumo Suit Set",
+    description: "Two oversized inflatable sumo suits for adults. For when arguments need to go physical.",
+    emoji: "🤼",
+    price: 59.99,
+    source: "Amazon",
+    category: "Toys"
+  },
+  {
+    id: 66,
+    name: "Finger Hands (Set of 5)",
+    description: "Tiny rubber hands that fit on each of your fingertips. Hands on hands. It's philosophical.",
+    emoji: "🖐️",
+    price: 7.99,
+    source: "Amazon",
+    category: "Novelty"
+  },
+  {
+    id: 67,
+    name: "Screaming Goat Figure",
+    description: "Press the button. It screams like a goat. That's it. 4.7 stars.",
+    emoji: "🐐",
+    price: 12.99,
+    source: "Amazon",
+    category: "Novelty"
+  },
+  {
+    id: 68,
+    name: "Squatty Potty Toilet Stool",
+    description: "Ergonomic stool that elevates your feet for better bathroom posture. Endorsed by a pooping unicorn.",
+    emoji: "🚽",
+    price: 24.99,
+    source: "Amazon",
+    category: "Home"
+  },
+  {
+    id: 69,
+    name: "Meat Tenderizer Mallet (Thor's Hammer)",
+    description: "Thor's Mjolnir-shaped meat tenderizer. Only the worthy shall flatten thy chicken breast.",
+    emoji: "🔨",
+    price: 19.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 70,
+    name: "Whole Roasted Pig (Frozen, 30 lbs)",
+    description: "A fully prepared, frozen whole pig ready for the spit. Feeds 20. Ships FedEx. Neighbors will know.",
+    emoji: "🐷",
+    price: 199.00,
+    source: "D'Artagnan",
+    category: "Novelty Food"
+  },
+  {
+    id: 71,
+    name: "Sloth Oven Mitts",
+    description: "Sloth-shaped silicone oven mitts where the fingers ARE the claws. Heat resistant to 450°F.",
+    emoji: "🦥",
+    price: 16.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 72,
+    name: "Wine Glass Necklace",
+    description: "A wearable silicone wine glass that hangs around your neck. For when tables aren't available.",
+    emoji: "🍷",
+    price: 12.99,
+    source: "Amazon",
+    category: "Novelty"
+  },
+  {
+    id: 73,
+    name: "Zombie Garden Gnome",
+    description: "Standard garden gnome but rising from the grave with a bloody shovel. Very welcoming.",
+    emoji: "🧟",
+    price: 34.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 74,
+    name: "Selfie Stick for Dogs",
+    description: "A treat-lure mount for your phone so your dog stares directly into the camera. Genius.",
+    emoji: "🐕",
+    price: 19.99,
+    source: "Amazon",
+    category: "Pet Accessories"
+  },
+  {
+    id: 75,
+    name: "Inflatable Dinosaur Costume",
+    description: "Full-body inflatable T-Rex suit with battery fan. Walk like a dinosaur. Fall over like one too.",
+    emoji: "🦖",
+    price: 44.99,
+    source: "Amazon",
+    category: "Costumes"
+  },
+  {
+    id: 76,
+    name: "Nose-Shaped Pasta",
+    description: "Actual nose-shaped pasta from Italy. Al dente boogers for your gourmet dinner party.",
+    emoji: "👃",
+    price: 8.99,
+    source: "Etsy",
+    category: "Novelty Food"
+  },
+  {
+    id: 77,
+    name: "Spice Girls Commemorative Plate",
+    description: "Fine porcelain collector's plate featuring all five Spice Girls in their 1997 glory.",
+    emoji: "🍽️",
+    price: 39.99,
+    source: "Etsy",
+    category: "Collectibles"
+  },
+  {
+    id: 78,
+    name: "Desktop Vacuum Cleaner",
+    description: "Mini USB vacuum for keyboard crumbs. Has a tiny bin. Takes its job very seriously.",
+    emoji: "🧹",
+    price: 11.99,
+    source: "Amazon",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 79,
+    name: "Bacon-Flavored Lip Balm",
+    description: "SPF 15 lip balm that tastes like breakfast. Smells of ambition and processed meat.",
+    emoji: "💋",
+    price: 4.99,
+    source: "Amazon",
+    category: "Novelty"
+  },
+  {
+    id: 80,
+    name: "Giant 6-Foot Teddy Bear",
+    description: "Plush bear that's as tall as most NBA players. Requires its own room. No refunds on regret.",
+    emoji: "🧸",
+    price: 179.99,
+    source: "Amazon",
+    category: "Toys"
+  },
+  {
+    id: 81,
+    name: "Human-Sized Hamster Wheel",
+    description: "Steel exercise wheel for adult humans in their backyard. 12ft diameter. No judgment.",
+    emoji: "🐹",
+    price: 699.00,
+    source: "Wayfair",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 82,
+    name: "Handmade Mushroom Lamp",
+    description: "Hand-blown glass mushroom night light in neon pink. Feels like living inside a fairy tale.",
+    emoji: "🍄",
+    price: 59.99,
+    source: "Etsy",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 83,
+    name: "Pizza Box Drone",
+    description: "Fold-out drone hidden inside a standard pizza box. Fully functional. FAA registration suggested.",
+    emoji: "🍕",
+    price: 49.99,
+    source: "Amazon",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 84,
+    name: "Toilet Paper iPhone Stand",
+    description: "A toilet paper roll-shaped phone stand for the tank. Multitasking in the bathroom, elevated.",
+    emoji: "📱",
+    price: 8.99,
+    source: "Amazon",
+    category: "Novelty"
+  },
+  {
+    id: 85,
+    name: "Sriracha Candy Canes (6-Pack)",
+    description: "Hot sauce–flavored candy canes. Hangs on tree. Destroys Christmas morning.",
+    emoji: "🌶️",
+    price: 9.99,
+    source: "Amazon",
+    category: "Novelty Food"
+  },
+  {
+    id: 86,
+    name: "Dinosaur Egg Ice Cube Tray",
+    description: "Silicone tray that makes oversized dino egg-shaped ice spheres. Jurassic refreshment.",
+    emoji: "🦕",
+    price: 13.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 87,
+    name: "Luxury Carbon Fiber Wallet",
+    description: "Ultra-slim carbon fiber card holder. Holds 7 cards. Weighs 1 oz. Costs more than it should.",
+    emoji: "💳",
+    price: 89.99,
+    source: "Amazon",
+    category: "Luxury Scams"
+  },
+  {
+    id: 88,
+    name: "Cat Butt Coasters (Set of 4)",
+    description: "Ceramic coasters shaped like cat posteriors. Catches condensation with dignity. Mostly.",
+    emoji: "🐱",
+    price: 17.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 89,
+    name: "Portable Espresso Maker",
+    description: "Hand-pump espresso device the size of a water bottle. Real pressure, real espresso, real chaos.",
+    emoji: "☕",
+    price: 69.99,
+    source: "Wacaco",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 90,
+    name: "Anti-Gravity Magnetic Floating Globe",
+    description: "Earth-replica globe that levitates and rotates using electromagnets. Hypnotic. Expensive.",
+    emoji: "🌍",
+    price: 119.99,
+    source: "Amazon",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 91,
+    name: "Pickle-Flavored Candy Canes",
+    description: "Dill pickle–scented candy canes. Divisive at Christmas parties. 4.2 stars.",
+    emoji: "🥒",
+    price: 7.99,
+    source: "Amazon",
+    category: "Novelty Food"
+  },
+  {
+    id: 92,
+    name: "Rollable LED Keyboard",
+    description: "Flexible silicone keyboard you can literally roll up and stuff in your pocket. Truly portable typing.",
+    emoji: "⌨️",
+    price: 18.99,
+    source: "Amazon",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 93,
+    name: "Banana Holder for Car Vent",
+    description: "A clip that holds a single banana on your car air vent. Commuting nutrition, solved.",
+    emoji: "🍌",
+    price: 9.99,
+    source: "Amazon",
+    category: "Novelty"
+  },
+  {
+    id: 94,
+    name: "Real Meteorite Fragment",
+    description: "Authenticated 4-billion-year-old meteorite slice from the Sahara Desert. Feels appropriately heavy.",
+    emoji: "☄️",
+    price: 39.99,
+    source: "Etsy",
+    category: "Collectibles"
+  },
+  {
+    id: 95,
+    name: "Lobster Claw Oven Mitts",
+    description: "Giant plush lobster claw mitts. Protects hands to 400°F. Makes you feel powerful.",
+    emoji: "🦞",
+    price: 18.99,
+    source: "Amazon",
+    category: "Niche Kitchen"
+  },
+  {
+    id: 96,
+    name: "Champagne Gummy Bears (1kg)",
+    description: "Prosecco-infused gummy bears imported from Germany. For the classy sugar rush.",
+    emoji: "🍾",
+    price: 32.99,
+    source: "Amazon",
+    category: "Novelty Food"
+  },
+  {
+    id: 97,
+    name: "Medieval Knight Full Armor Statue",
+    description: "Life-sized wearable medieval knight suit for your hallway. 6'2\". Makes guests nervous.",
+    emoji: "⚔️",
+    price: 2399.00,
+    source: "Wayfair",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 98,
+    name: "Heated Smart Mug (Ember)",
+    description: "Ember mug that maintains your exact preferred coffee temperature via app. Never drink sad cold coffee.",
+    emoji: "☕",
+    price: 149.95,
+    source: "Ember",
+    category: "Tech & Gadgets"
+  },
+  {
+    id: 99,
+    name: "Taxidermied Frog Playing Banjo",
+    description: "A real taxidermied frog posed playing a tiny banjo. Ships from someone's garage in Louisiana.",
+    emoji: "🐸",
+    price: 74.99,
+    source: "Etsy",
+    category: "Bizarre Decor"
+  },
+  {
+    id: 100,
+    name: "Solid Gold Monopoly Set",
+    description: "A genuine gold and gemstone Monopoly set. Tokens are solid 18k. Boardwalk is actually worth it.",
+    emoji: "🎲",
+    price: 9900.00,
+    source: "Franklin Mint",
+    category: "Luxury Scams"
   }
 ];
 
