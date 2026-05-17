@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
 import { calculateScore, getScoreLabel, formatPrice, sliderToPrice, getPurchaseLink } from "@/lib/gameUtils";
+import SourceButton from "@/components/game/SourceButton";
 
 const scoreColors = {
   neon: "text-neon",
@@ -163,14 +164,7 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
           transition={{ delay: 0.6 }}
           className="flex flex-col gap-3"
         >
-          <a
-            href={getPurchaseLink(product)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-3 rounded-xl font-bold text-sm tracking-widest uppercase font-mono border border-neon/50 text-neon hover:bg-neon/10 transition-colors text-center"
-          >
-            View on {product.source} →
-          </a>
+          <SourceButton product={product} href={getPurchaseLink(product)} size="lg" className="rounded-xl font-bold tracking-widest" />
           <button
             onClick={onNext}
             className="w-full py-3.5 rounded-xl font-bold text-sm tracking-widest uppercase font-mono bg-neon text-primary-foreground neon-glow hover:opacity-90 transition-opacity"

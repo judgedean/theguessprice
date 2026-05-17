@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
 import { Share2, Copy, Check } from "lucide-react";
 import { getFinalGrade, formatPrice, calculateScore, sliderToPrice, getScoreLabel, getPurchaseLink } from "@/lib/gameUtils";
-import { ExternalLink } from "lucide-react";
+import SourceButton from "@/components/game/SourceButton";
 
 const gradeColors = {
   neon: "text-neon neon-text",
@@ -158,15 +158,7 @@ export default function FinalResults({ rounds, onRestart }) {
                 <span className="text-xl shrink-0">{r.product.emoji}</span>
                 <span className="text-sm text-foreground truncate">{r.product.name}</span>
               </div>
-              <a
-                href={getPurchaseLink(r.product)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-neon/40 text-neon text-xs font-mono font-bold uppercase tracking-wider hover:bg-neon/10 transition-colors"
-              >
-                <ExternalLink className="w-3 h-3" />
-                {r.product.source}
-              </a>
+              <SourceButton product={r.product} href={getPurchaseLink(r.product)} size="sm" className="shrink-0" />
             </div>
           ))}
         </div>
