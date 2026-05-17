@@ -9,6 +9,7 @@ import ScoreReveal from "@/components/game/ScoreReveal";
 import FinalResults from "@/components/game/FinalResults";
 import AdSidebar from "@/components/game/AdSidebar";
 import ScoreStrip from "@/components/game/ScoreStrip";
+import Footer from "@/components/Footer";
 
 const TOTAL_ROUNDS = 5;
 
@@ -155,10 +156,7 @@ export default function Game() {
         <AdSidebar side="Right" />
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-border/40 py-4 text-center text-xs font-mono text-muted-foreground/50">
-        Guess The Price · All prices are real (unfortunately)
-      </footer>
+      <Footer />
     </div>
   );
 }
