@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
-import { calculateScore, getScoreLabel, formatPrice, sliderToPrice } from "@/lib/gameUtils";
+import { calculateScore, getScoreLabel, formatPrice, sliderToPrice, getPurchaseLink } from "@/lib/gameUtils";
 
 const scoreColors = {
   neon: "text-neon",
@@ -156,16 +156,28 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
           {score === 100 ? "🎯 Absolutely perfect!" : `You were ${diffText}`}
         </motion.p>
 
-        {/* Next button */}
-        <motion.button
+        {/* View on store + Next */}
+        <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          onClick={onNext}
-          className="w-full py-3.5 rounded-xl font-bold text-sm tracking-widest uppercase font-mono bg-neon text-primary-foreground neon-glow hover:opacity-90 transition-opacity"
+          className="flex flex-col gap-3"
         >
-          {isLast ? "See Final Results →" : "Next Round →"}
-        </motion.button>
+          <a
+            href={getPurchaseLink(product)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-3 rounded-xl font-bold text-sm tracking-widest uppercase font-mono border border-neon/50 text-neon hover:bg-neon/10 transition-colors text-center"
+          >
+            View on {product.source} →
+          </a>
+          <button
+            onClick={onNext}
+            className="w-full py-3.5 rounded-xl font-bold text-sm tracking-widest uppercase font-mono bg-neon text-primary-foreground neon-glow hover:opacity-90 transition-opacity"
+          >
+            {isLast ? "See Final Results →" : "Next Round →"}
+          </button>
+        </motion.div>
       </div>
     </motion.div>
   );

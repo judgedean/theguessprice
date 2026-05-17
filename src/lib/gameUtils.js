@@ -43,6 +43,13 @@ export function getScoreLabel(score) {
   return { label: "Terrible", color: "red", emoji: "🗑️" };
 }
 
+export function getPurchaseLink(product) {
+  const q = encodeURIComponent(product.name);
+  if (product.source === "Etsy") return `https://www.etsy.com/search?q=${q}`;
+  if (product.source === "IWOOT") return `https://www.iwantoneofthose.com/elysium.search?search=${q}`;
+  return `https://www.amazon.com/s?k=${q}`;
+}
+
 export function getFinalGrade(totalScore) {
   const avg = totalScore / 5;
   if (avg >= 90) return { grade: "S", label: "PRICE ORACLE", color: "neon" };

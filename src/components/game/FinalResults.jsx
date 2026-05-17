@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
 import { Share2, Copy, Check } from "lucide-react";
-import { getFinalGrade, formatPrice, calculateScore, sliderToPrice, getScoreLabel } from "@/lib/gameUtils";
+import { getFinalGrade, formatPrice, calculateScore, sliderToPrice, getScoreLabel, getPurchaseLink } from "@/lib/gameUtils";
+import { ExternalLink } from "lucide-react";
 
 const gradeColors = {
   neon: "text-neon neon-text",
@@ -139,6 +140,37 @@ export default function FinalResults({ rounds, onRestart }) {
           })}
         </div>
       </div>
+
+      {/* Shop these items */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.9 }}
+        className="rounded-xl border border-border bg-card overflow-hidden"
+      >
+        <div className="px-5 py-3 border-b border-border">
+          <span className="text-xs font-mono text-muted-foreground uppercase tracking-widest">Shop These Items</span>
+        </div>
+        <div className="divide-y divide-border">
+          {rounds.map((r, i) => (
+            <div key={i} className="flex items-center justify-between px-5 py-3 gap-3">
+              <div className="flex items-center gap-2 min-w-0">
+                <span className="text-xl shrink-0">{r.product.emoji}</span>
+                <span className="text-sm text-foreground truncate">{r.product.name}</span>
+              </div>
+              <a
+                href={getPurchaseLink(r.product)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-neon/40 text-neon text-xs font-mono font-bold uppercase tracking-wider hover:bg-neon/10 transition-colors"
+              >
+                <ExternalLink className="w-3 h-3" />
+                {r.product.source}
+              </a>
+            </div>
+          ))}
+        </div>
+      </motion.div>
 
       {/* Restart + Share */}
       <motion.div
