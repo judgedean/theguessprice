@@ -45,9 +45,13 @@ export function getScoreLabel(score) {
 
 export function getPurchaseLink(product) {
   const q = encodeURIComponent(product.name);
-  if (product.source === "Etsy") return `https://www.etsy.com/search?q=${q}`;
-  if (product.source === "IWOOT") return `https://www.iwantoneofthose.com/elysium.search?search=${q}`;
-  return `https://www.amazon.com/s?k=${q}`;
+  const src = product.source;
+  if (src === "Etsy") return `https://www.etsy.com/search?q=${q}`;
+  if (src === "IWOOT") return `https://www.iwantoneofthose.com/elysium.search?search=${q}`;
+  if (src === "Hammacher Schlemmer") return `https://www.hammacher.com/search/default.aspx?query=${q}`;
+  if (src === "Amazon") return `https://www.amazon.com/s?k=${q}`;
+  // Named brands/stores — fall back to a branded Google Shopping search so we don't misroute
+  return `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(src + " " + product.name)}`;
 }
 
 export function getFinalGrade(totalScore) {
