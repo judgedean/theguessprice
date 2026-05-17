@@ -10,6 +10,7 @@ import FinalResults from "@/components/game/FinalResults";
 import AdSidebar from "@/components/game/AdSidebar";
 import ScoreStrip from "@/components/game/ScoreStrip";
 import Footer from "@/components/Footer";
+import BlogSection from "@/components/game/BlogSection";
 
 const TOTAL_ROUNDS = 5;
 
@@ -156,6 +157,7 @@ export default function Game() {
         <AdSidebar side="Right" />
       </main>
 
+      <BlogSection />
       <Footer />
     </div>
   );
