@@ -281,7 +281,8 @@ export const PRODUCTS = [
     emoji: "😿",
     price: 36.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    amazonLink: "https://amzn.to/4EnsoCC"
   },
   {
     id: 32,
