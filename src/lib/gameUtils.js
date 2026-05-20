@@ -46,11 +46,10 @@ export function getScoreLabel(score) {
 export function getPurchaseLink(product) {
   const q = encodeURIComponent(product.name);
   const src = product.source;
-  if (src === "Amazon" && product.amazonLink) return product.amazonLink;
+  if (src === "Amazon") return product.amazonLink || `https://www.amazon.com/s?k=${q}&tag=theguessprice-20`;
   if (src === "Etsy") return `https://www.etsy.com/search?q=${q}`;
   if (src === "IWOOT") return `https://www.iwantoneofthose.com/elysium.search?search=${q}`;
   if (src === "Hammacher Schlemmer") return `https://www.hammacher.com/search/default.aspx?query=${q}`;
-  if (src === "Amazon") return `https://www.amazon.com/s?k=${q}`;
   return `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(src + " " + product.name)}`;
 }
 
