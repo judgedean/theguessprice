@@ -1,6 +1,6 @@
 const SOUNDS = {
-  correct: "https://signals.nextzen.im/sounds/success.mp3",
-  incorrect: "https://signals.nextzen.im/sounds/error.mp3",
+  correct: "https://upload.wikimedia.org/wikipedia/commons/9/93/Notification_sound_sound_effect.mp3",
+  incorrect: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Error_sound_sound_effect.mp3",
 };
 
 // Preload audio objects
