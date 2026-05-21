@@ -1,18 +1,24 @@
-const SOUNDS = {
-  correct: "https://upload.wikimedia.org/wikipedia/commons/9/93/Notification_sound_sound_effect.mp3",
-  incorrect: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Error_sound_sound_effect.mp3",
-};
+let audioCtx = null;
 
-// Preload audio objects
-const audioCache = {};
-Object.entries(SOUNDS).forEach(([key, url]) => {
-  const audio = new Audio(url);
-  audio.preload = "auto";
-  audioCache[key] = audio;
-});
+function getCtx() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+
+function playTone(frequency, type, startTime, duration, ctx) {
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+  osc.type = type;
+  osc.frequency.setValueAtTime(frequency, startTime);
+  gain.gain.setValueAtTime(0.3, startTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+  osc.start(startTime);
+  osc.stop(startTime + duration);
+}
 
 export function isMuted() {
-  // Default is unmuted — only muted if explicitly set to "true"
   return localStorage.getItem("gtp_muted") === "true";
 }
 
@@ -22,8 +28,15 @@ export function setMuted(val) {
 
 export function playSound(name) {
   if (isMuted()) return;
-  const audio = audioCache[name];
-  if (!audio) return;
-  audio.currentTime = 0;
-  audio.play().catch(() => {});
+  const ctx = getCtx();
+  const now = ctx.currentTime;
+
+  if (name === "correct") {
+    // Cheerful double-beep: 150ms at 523Hz, then 300ms at 659Hz
+    playTone(523, "square", now, 0.15, ctx);
+    playTone(659, "square", now + 0.16, 0.3, ctx);
+  } else if (name === "incorrect") {
+    // Low dramatic buzzer: 400ms at 180Hz sawtooth
+    playTone(180, "sawtooth", now, 0.4, ctx);
+  }
 }
