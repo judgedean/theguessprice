@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
 import { calculateScore, getScoreLabel, formatPrice, sliderToPrice, getPurchaseLink } from "@/lib/gameUtils";
+import { playSound } from "@/lib/sounds";
 import SourceButton from "@/components/game/SourceButton";
 
 const scoreColors = {
@@ -46,6 +47,7 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
     firedRef.current = true;
 
     const tier = getConfettiTier(guessedPrice, product.price);
+    playSound(tier > 0 ? "correct" : "incorrect");
     if (tier === 0) return;
 
     setBadge(tierBadge[tier]);

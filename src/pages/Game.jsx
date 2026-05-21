@@ -11,6 +11,7 @@ import AdSidebar from "@/components/game/AdSidebar";
 import ScoreStrip from "@/components/game/ScoreStrip";
 import Footer from "@/components/Footer";
 import BlogSection from "@/components/game/BlogSection";
+import MuteButton from "@/components/game/MuteButton";
 
 const TOTAL_ROUNDS = 5;
 
@@ -82,7 +83,8 @@ export default function Game() {
           {phase !== "results" && (
             <RoundBadge current={round} total={TOTAL_ROUNDS} />
           )}
-          <div className="w-28 text-right">
+          <div className="w-28 flex items-center justify-end gap-2">
+            <MuteButton />
             {phase !== "results" && completedRounds.length > 0 && (
               <ScoreStrip rounds={completedRounds} currentRound={round} />
             )}
