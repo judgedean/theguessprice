@@ -4,6 +4,7 @@ import confetti from "canvas-confetti";
 import { Share2, Copy, Check } from "lucide-react";
 import { getFinalGrade, formatPrice, calculateScore, sliderToPrice, getScoreLabel, getPurchaseLink } from "@/lib/gameUtils";
 import SourceButton from "@/components/game/SourceButton";
+import { playSound } from "@/lib/sounds";
 
 const gradeColors = {
   neon: "text-neon neon-text",
@@ -48,6 +49,7 @@ export default function FinalResults({ rounds, onRestart }) {
   };
 
   useEffect(() => {
+    playSound("finish");
     if (totalScore >= 400) {
       confetti({
         particleCount: 200,
