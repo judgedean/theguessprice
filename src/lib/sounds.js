@@ -1,6 +1,6 @@
 const SOUNDS = {
-  correct: "https://assets.mixkit.co/active_storage/sfx/2019/2019-84.wav",
-  incorrect: "https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav",
+  correct: "https://signals.nextzen.im/sounds/success.mp3",
+  incorrect: "https://signals.nextzen.im/sounds/error.mp3",
 };
 
 // Preload audio objects
@@ -12,6 +12,7 @@ Object.entries(SOUNDS).forEach(([key, url]) => {
 });
 
 export function isMuted() {
+  // Default is unmuted — only muted if explicitly set to "true"
   return localStorage.getItem("gtp_muted") === "true";
 }
 
