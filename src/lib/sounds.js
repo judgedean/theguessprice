@@ -1,5 +1,5 @@
 const SOUNDS = {
-  correct: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/26c4e832c_success.wav",
+  correct: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/fe8157013_success2.wav",
   incorrect: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/ad63c9d2c_error.wav",
   finish: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/f75516bd2_finish.wav",
 };
