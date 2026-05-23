@@ -1,7 +1,9 @@
 const SOUNDS = {
-  correct: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/fe8157013_success2.wav",
-  incorrect: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/ad63c9d2c_error.wav",
-  finish: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/f75516bd2_finish.wav",
+  tier0: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/b4745cdb5_Tier0.mp3",
+  tier1: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/3d7cf868d_Tier1.mp3",
+  tier2: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/4b60be15d_Tier2.mp3",
+  tier3: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/ba29e61c1_Tier3.mp3",
+  finish: "https://media.base44.com/files/public/6a082846c530d2487ed5d239/cd09dbc47_GameOver.mp3",
 };
 
 // Preload audio objects
@@ -26,4 +28,9 @@ export function playSound(name) {
   if (!audio) return;
   audio.currentTime = 0;
   audio.play().catch(() => {});
+}
+
+// Play the correct tier sound based on guess accuracy
+export function playTierSound(tier) {
+  playSound(`tier${tier}`);
 }
