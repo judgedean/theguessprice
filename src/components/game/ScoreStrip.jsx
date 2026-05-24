@@ -1,5 +1,21 @@
-import { motion } from "framer-motion";
-import { calculateScore, sliderToPrice, formatPrice } from "@/lib/gameUtils";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { useEffect } from "react";
+import { calculateScore, sliderToPrice } from "@/lib/gameUtils";
+
+function AnimatedScore({ value }) {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (v) => Math.round(v));
+
+  useEffect(() => {
+    const controls = animate(count, value, {
+      duration: 0.8,
+      ease: "easeOut",
+    });
+    return controls.stop;
+  }, [value]);
+
+  return <motion.span className="text-neon font-bold">{rounded}</motion.span>;
+}
 
 const dotColors = ["bg-neon", "bg-green-400", "bg-yellow-400", "bg-orange-400", "bg-red-400"];
 
@@ -42,14 +58,9 @@ export default function ScoreStrip({ rounds, currentRound }) {
 
       {/* Running total */}
       {rounds.length > 0 && (
-        <motion.div
-          key={total}
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          className="text-xs font-mono text-muted-foreground"
-        >
-          <span className="text-neon font-bold">{total}</span> pts
-        </motion.div>
+        <div className="text-xs font-mono text-muted-foreground">
+          <AnimatedScore value={total} /> pts
+        </div>
       )}
     </div>
   );
