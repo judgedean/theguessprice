@@ -54,33 +54,41 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
     setTimeout(() => setBadge(null), 2200);
 
     if (tier === 1) {
+      // Light sprinkle
       confetti({
-        particleCount: 25,
-        spread: 60,
-        startVelocity: 30,
+        particleCount: 18,
+        spread: 40,
+        startVelocity: 18,
+        gravity: 1.2,
         colors: ["#facc15", "#ffffff", "#fde68a"],
-        origin: { y: 0.5 },
+        origin: { y: 0.55 },
       });
     } else if (tier === 2) {
+      // Standard colorful burst
       confetti({
-        particleCount: 75,
-        spread: 80,
-        startVelocity: 38,
-        colors: ["#4ade80", "#ffffff", "#86efac"],
-        origin: { y: 0.5 },
-      });
-    } else if (tier === 3) {
-      confetti({
-        particleCount: 150,
-        spread: 100,
-        startVelocity: 50,
-        colors: ["#00ff66", "#00cc52", "#ffffff", "#a0ffcc"],
+        particleCount: 90,
+        spread: 90,
+        startVelocity: 40,
+        colors: ["#4ade80", "#60a5fa", "#f472b6", "#facc15", "#ffffff"],
         origin: { y: 0.5 },
       });
       setTimeout(() => {
-        confetti({ particleCount: 60, spread: 120, startVelocity: 30, colors: ["#00ff66", "#ffffff"], origin: { y: 0.4, x: 0.2 } });
-        confetti({ particleCount: 60, spread: 120, startVelocity: 30, colors: ["#00ff66", "#ffffff"], origin: { y: 0.4, x: 0.8 } });
-      }, 300);
+        confetti({ particleCount: 40, spread: 70, startVelocity: 28, colors: ["#4ade80", "#ffffff", "#86efac"], origin: { y: 0.45, x: 0.35 } });
+        confetti({ particleCount: 40, spread: 70, startVelocity: 28, colors: ["#60a5fa", "#ffffff", "#f472b6"], origin: { y: 0.45, x: 0.65 } });
+      }, 250);
+    } else if (tier === 3) {
+      // Massive gold explosion
+      const gold = ["#FFD700", "#FFC200", "#FFEC80", "#ffffff", "#d4af37", "#fffacd"];
+      confetti({ particleCount: 200, spread: 120, startVelocity: 60, colors: gold, origin: { y: 0.5 } });
+      setTimeout(() => {
+        confetti({ particleCount: 120, spread: 140, startVelocity: 45, colors: gold, origin: { y: 0.4, x: 0.15 } });
+        confetti({ particleCount: 120, spread: 140, startVelocity: 45, colors: gold, origin: { y: 0.4, x: 0.85 } });
+      }, 200);
+      setTimeout(() => {
+        confetti({ particleCount: 80, spread: 100, startVelocity: 35, colors: gold, origin: { y: 0.35, x: 0.5 } });
+        confetti({ particleCount: 60, angle: 60,  spread: 80, startVelocity: 50, colors: gold, origin: { y: 0.6, x: 0.0 } });
+        confetti({ particleCount: 60, angle: 120, spread: 80, startVelocity: 50, colors: gold, origin: { y: 0.6, x: 1.0 } });
+      }, 450);
     }
   }, []);
 
