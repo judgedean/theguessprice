@@ -26,7 +26,7 @@ export default function PriceSlider({ sliderValue, onChange }) {
           {formatPrice(currentPrice)}
         </motion.div>
         <p className="text-xs text-muted-foreground font-mono mt-1 uppercase tracking-widest">
-          Your Guess
+          Your Guess · 🇺🇸 USD
         </p>
       </div>
 
@@ -54,8 +54,8 @@ export default function PriceSlider({ sliderValue, onChange }) {
 
       {/* Min/Max labels */}
       <div className="flex justify-between text-xs font-mono text-muted-foreground px-1">
-        <span>$0.01</span>
-        <span>$10,000</span>
+        <span>$0.01 USD</span>
+        <span>$10,000 USD</span>
       </div>
     </div>
   );

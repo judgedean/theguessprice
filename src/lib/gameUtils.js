@@ -18,11 +18,12 @@ export function priceToSlider(price) {
   return ((logValue - logMin) / (logMax - logMin)) * SLIDER_MAX;
 }
 
-export function formatPrice(price) {
-  if (price >= 1000) return `$${price.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
-  if (price >= 100) return `$${price.toFixed(0)}`;
-  if (price >= 10) return `$${price.toFixed(2)}`;
-  return `$${price.toFixed(2)}`;
+export function formatPrice(price, showCurrency = false) {
+  let str;
+  if (price >= 1000) str = `$${price.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
+  else if (price >= 100) str = `$${price.toFixed(0)}`;
+  else str = `$${price.toFixed(2)}`;
+  return showCurrency ? `${str} USD` : str;
 }
 
 // Score: 100 points for perfect guess, scales down logarithmically

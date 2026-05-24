@@ -79,6 +79,7 @@ export default function Game() {
           <div className="flex items-center gap-2">
             <span className="text-neon font-mono font-bold text-lg neon-text">$</span>
             <span className="font-bold font-grotesk tracking-tight text-foreground">Guess The Price</span>
+            <span className="hidden sm:inline text-xs font-mono text-muted-foreground border border-border rounded px-1.5 py-0.5">🇺🇸 USD</span>
           </div>
           {phase !== "results" && (
             <RoundBadge current={round} total={TOTAL_ROUNDS} />

@@ -141,11 +141,11 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
         >
           <div className="rounded-lg bg-muted p-4">
             <div className="text-xs text-muted-foreground font-mono uppercase tracking-widest mb-1">Your Guess</div>
-            <div className="text-xl font-mono font-bold text-foreground">{formatPrice(guessedPrice)}</div>
+            <div className="text-xl font-mono font-bold text-foreground">{formatPrice(guessedPrice, true)}</div>
           </div>
           <div className="rounded-lg bg-muted p-4 border border-neon/30">
             <div className="text-xs text-muted-foreground font-mono uppercase tracking-widest mb-1">Actual Price</div>
-            <div className="text-xl font-mono font-bold text-neon neon-text">{formatPrice(product.price)}</div>
+            <div className="text-xl font-mono font-bold text-neon neon-text">{formatPrice(product.price, true)}</div>
           </div>
         </motion.div>
 
