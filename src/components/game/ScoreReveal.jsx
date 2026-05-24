@@ -25,7 +25,7 @@ function getConfettiTier(guessedPrice, actualPrice) {
   const pct = Math.abs(guessedPrice - actualPrice) / actualPrice;
   if (pct <= 0.02) return 3;
   if (pct <= 0.10) return 2;
-  if (pct <= 0.20) return 1;
+  if (pct <= 0.30) return 1;
   return 0;
 }
 
