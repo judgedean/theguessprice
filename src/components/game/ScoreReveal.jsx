@@ -104,13 +104,49 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
       {/* Floating points ticker */}
       <motion.div
         key={score}
-        initial={{ opacity: 1, y: 0 }}
-        animate={{ opacity: 0, y: -80 }}
-        transition={{ duration: 1.4, ease: "easeOut", delay: 0.15 }}
-        className={`absolute left-1/2 -translate-x-1/2 top-4 z-20 pointer-events-none font-mono font-bold text-3xl ${scoreColors[color]} ${color === "neon" ? "neon-text" : ""}`}
-        style={{ textShadow: color === "neon" ? undefined : "0 0 12px currentColor" }}
+        initial={{ opacity: 1, y: 0, scale: 1 }}
+        animate={{ opacity: 0, y: -110, scale: 1.08 }}
+        transition={{ duration: 1.8, ease: "easeOut", delay: 0.1 }}
+        className="absolute left-1/2 -translate-x-1/2 top-6 z-20 pointer-events-none flex flex-col items-center gap-0.5"
       >
-        +{score}
+        <span
+          className={`font-mono font-bold ${
+            color === "neon"
+              ? "text-4xl text-neon neon-text"
+              : color === "green"
+              ? "text-4xl text-green-400"
+              : color === "yellow"
+              ? "text-3xl text-yellow-400"
+              : color === "orange"
+              ? "text-3xl text-orange-400"
+              : "text-2xl text-red-400"
+          }`}
+          style={{
+            textShadow:
+              color === "neon"
+                ? "0 0 14px hsl(142 100% 50% / 0.9), 0 0 30px hsl(142 100% 50% / 0.5)"
+                : "0 0 10px currentColor",
+          }}
+        >
+          +{score} pts
+        </span>
+        {label && (
+          <span
+            className={`font-mono font-bold text-sm uppercase tracking-widest ${
+              color === "neon"
+                ? "text-neon/80"
+                : color === "green"
+                ? "text-green-400/80"
+                : color === "yellow"
+                ? "text-yellow-400/80"
+                : color === "orange"
+                ? "text-orange-400/80"
+                : "text-red-400/80"
+            }`}
+          >
+            {label}!
+          </span>
+        )}
       </motion.div>
 
     <motion.div
