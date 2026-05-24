@@ -92,6 +92,19 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
     : "Exact!";
 
   return (
+    <div className="relative">
+      {/* Floating points ticker */}
+      <motion.div
+        key={score}
+        initial={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 0, y: -80 }}
+        transition={{ duration: 1.4, ease: "easeOut", delay: 0.15 }}
+        className={`absolute left-1/2 -translate-x-1/2 top-4 z-20 pointer-events-none font-mono font-bold text-3xl ${scoreColors[color]} ${color === "neon" ? "neon-text" : ""}`}
+        style={{ textShadow: color === "neon" ? undefined : "0 0 12px currentColor" }}
+      >
+        +{score}
+      </motion.div>
+
     <motion.div
       initial={{ opacity: 0, scale: 0.92 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -176,5 +189,6 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
         </motion.div>
       </div>
     </motion.div>
+    </div>
   );
 }
