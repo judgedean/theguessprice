@@ -41,7 +41,7 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
     firedRef.current = true;
 
     const tier = getGuessTier(guessedPrice, product.price);
-    playTierSound(tier);
+    playTierSound(tier, guessedPrice === product.price);
     if (tier === 0) return;
 
     setBadge(tierBadge[tier]);
