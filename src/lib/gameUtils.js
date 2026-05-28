@@ -26,21 +26,51 @@ export function formatPrice(price, showCurrency = false) {
   return showCurrency ? `${str} USD` : str;
 }
 
-// Score: 100 points for perfect guess, scales down logarithmically
+// Tier thresholds (percentage difference from actual price)
+export const TIER_THRESHOLDS = {
+  tier3: 0.05,  // within 5%
+  tier2: 0.20,  // within 20% (but > 5%)
+  tier1: 0.50,  // within 50% (but > 20%)
+  // tier0: > 50%
+};
+
+export function getGuessTier(guessedPrice, actualPrice) {
+  const pct = Math.abs(guessedPrice - actualPrice) / actualPrice;
+  if (pct <= TIER_THRESHOLDS.tier3) return 3;
+  if (pct <= TIER_THRESHOLDS.tier2) return 2;
+  if (pct <= TIER_THRESHOLDS.tier1) return 1;
+  return 0;
+}
+
+// Score: 100 for exact, scales down based on tier
 export function calculateScore(guessedPrice, actualPrice) {
-  const ratio = Math.max(guessedPrice, actualPrice) / Math.min(guessedPrice, actualPrice);
-  // ratio of 1 = perfect, ratio of 10 = off by 10x
-  const logRatio = Math.log10(ratio); // 0 = perfect, 1 = 10x off
-  const score = Math.max(0, Math.round(100 * Math.max(0, 1 - logRatio)));
-  return score;
+  const pct = Math.abs(guessedPrice - actualPrice) / actualPrice;
+  if (pct === 0) return 100;
+  if (pct <= TIER_THRESHOLDS.tier3) {
+    // 95–99 pts: within 5%
+    return Math.round(99 - (pct / TIER_THRESHOLDS.tier3) * 4);
+  }
+  if (pct <= TIER_THRESHOLDS.tier2) {
+    // 70–94 pts: within 20%
+    const t = (pct - TIER_THRESHOLDS.tier3) / (TIER_THRESHOLDS.tier2 - TIER_THRESHOLDS.tier3);
+    return Math.round(94 - t * 24);
+  }
+  if (pct <= TIER_THRESHOLDS.tier1) {
+    // 30–69 pts: within 50%
+    const t = (pct - TIER_THRESHOLDS.tier2) / (TIER_THRESHOLDS.tier1 - TIER_THRESHOLDS.tier2);
+    return Math.round(69 - t * 39);
+  }
+  // 0–29 pts: more than 50% off
+  const t = Math.min(1, (pct - TIER_THRESHOLDS.tier1) / TIER_THRESHOLDS.tier1);
+  return Math.round(29 - t * 29);
 }
 
 export function getScoreLabel(score) {
   if (score === 100) return { label: "PERFECT!", color: "neon", emoji: "🎯" };
-  if (score >= 80) return { label: "Amazing!", color: "green", emoji: "🔥" };
-  if (score >= 60) return { label: "Nice!", color: "yellow", emoji: "👍" };
-  if (score >= 40) return { label: "Not Bad", color: "orange", emoji: "😅" };
-  if (score >= 20) return { label: "Way Off", color: "red", emoji: "💀" };
+  if (score >= 95) return { label: "Incredible!", color: "neon", emoji: "🎯" };
+  if (score >= 70) return { label: "Amazing!", color: "green", emoji: "🔥" };
+  if (score >= 30) return { label: "Nice!", color: "yellow", emoji: "👍" };
+  if (score >= 10) return { label: "Way Off", color: "orange", emoji: "😅" };
   return { label: "Terrible", color: "red", emoji: "🗑️" };
 }
 

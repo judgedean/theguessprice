@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
-import { calculateScore, getScoreLabel, formatPrice, sliderToPrice, getPurchaseLink } from "@/lib/gameUtils";
+import { calculateScore, getScoreLabel, formatPrice, sliderToPrice, getPurchaseLink, getGuessTier } from "@/lib/gameUtils";
 import { playTierSound } from "@/lib/sounds";
 import SourceButton from "@/components/game/SourceButton";
 
@@ -21,13 +21,7 @@ const borderColors = {
   red: "border-red-500/60",
 };
 
-function getConfettiTier(guessedPrice, actualPrice) {
-  const pct = Math.abs(guessedPrice - actualPrice) / actualPrice;
-  if (pct <= 0.02) return 3;
-  if (pct <= 0.10) return 2;
-  if (pct <= 0.30) return 1;
-  return 0;
-}
+
 
 const tierBadge = {
   1: { text: "So Close! 🎉",    bg: "bg-yellow-500/20 border-yellow-500/50 text-yellow-300" },
@@ -46,7 +40,7 @@ export default function ScoreReveal({ product, sliderValue, onNext, isLast }) {
     if (firedRef.current) return;
     firedRef.current = true;
 
-    const tier = getConfettiTier(guessedPrice, product.price);
+    const tier = getGuessTier(guessedPrice, product.price);
     playTierSound(tier);
     if (tier === 0) return;
 
