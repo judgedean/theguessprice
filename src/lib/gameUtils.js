@@ -75,7 +75,7 @@ export function getScoreLabel(score) {
 }
 
 export function getProductImageUrl(product) {
-  if (product.imageUrl) return product.imageUrl;
+  if (product.image) return product.image;
   const label = encodeURIComponent(product.name.replace(/\s+/g, '+').slice(0, 40));
   return `https://placehold.co/600x400/1a1a2e/00ff66?text=${label}`;
 }
