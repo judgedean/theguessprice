@@ -19,8 +19,10 @@ export default function ProductCard({ product }) {
       <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-neon to-transparent opacity-60" />
 
       {/* Product image */}
-      {!imgError ? (
-        <div className="w-full h-52 bg-muted flex items-center justify-center overflow-hidden">
+      <div className="w-full h-52 bg-muted flex items-center justify-center overflow-hidden">
+        {imgError ? (
+          <span className="text-8xl select-none">{product.emoji}</span>
+        ) : (
           <img
             src={imageUrl}
             alt={product.name}
@@ -28,12 +30,8 @@ export default function ProductCard({ product }) {
             className="w-full h-full"
             style={{ objectFit: "contain", borderRadius: "0.5rem", padding: "0.75rem" }}
           />
-        </div>
-      ) : (
-        <div className="w-full h-52 flex items-center justify-center bg-muted">
-          <span className="text-8xl select-none">{product.emoji}</span>
-        </div>
-      )}
+        )}
+      </div>
 
       <div className="p-6 text-center">
         {/* Category badge */}

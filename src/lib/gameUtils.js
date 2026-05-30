@@ -74,10 +74,30 @@ export function getScoreLabel(score) {
   return { label: "Terrible", color: "red", emoji: "🗑️" };
 }
 
+// Curated Unsplash photo IDs per category (direct stable URLs)
+const CATEGORY_PHOTOS = {
+  "Tech & Gadgets":      "photo-1518770660439-4636190af475",
+  "Niche Kitchen":       "photo-1556909114-f6e7ad7d3136",
+  "Bizarre Decor":       "photo-1616486338812-3dadae4b4ace",
+  "Luxury Scams":        "photo-1549989476-69a92fa57c36",
+  "Novelty":             "photo-1558618666-fcd25c85cd64",
+  "Novelty Food":        "photo-1565299624946-b28f40a0ae38",
+  "Toys":                "photo-1558060370-d644485927b4",
+  "Collectibles":        "photo-1555685812-4b943f1cb0eb",
+  "Pet Accessories":     "photo-1587300003388-59208cc962cb",
+  "Costumes":            "photo-1604975701397-6365ccbd028a",
+  "Candles":             "photo-1602523961358-f9f03dd557db",
+  "Sleep":               "photo-1541781774459-bb2af2f05b55",
+  "Survival":            "photo-1504280390367-361c6d9f38f4",
+  "Home":                "photo-1484101403633-562f891dc89a",
+};
+
 export function getProductImageUrl(product) {
   if (product.imageUrl) return product.imageUrl;
-  const query = encodeURIComponent(product.name);
-  return `https://source.unsplash.com/600x400/?${query},product`;
+  const photoId = CATEGORY_PHOTOS[product.category];
+  if (photoId) return `https://images.unsplash.com/${photoId}?w=600&q=80&fit=crop`;
+  const label = encodeURIComponent(product.name.slice(0, 30));
+  return `https://placehold.co/600x400/1a1a2e/00ff66?text=${label}`;
 }
 
 export function getPurchaseLink(product) {
