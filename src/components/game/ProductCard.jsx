@@ -1,11 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Tag } from "lucide-react";
-import { getProductImageUrl } from "@/lib/gameUtils";
+import { fetchWikimediaImage } from "@/lib/gameUtils";
+
+const placeholderUrl = (name) =>
+  `https://placehold.co/600x400/1a1a2e/00ff66?text=${encodeURIComponent(name.slice(0, 40))}`;
 
 export default function ProductCard({ product }) {
+  const [imgSrc, setImgSrc] = useState(product.image || null);
   const [imgError, setImgError] = useState(false);
-  const imageUrl = getProductImageUrl(product);
+
+  useEffect(() => {
+    setImgSrc(product.image || null);
+    setImgError(false);
+  }, [product.id]);
+
+  useEffect(() => {
+    if (!imgSrc && !imgError) {
+      fetchWikimediaImage(product.name)
+        .then((url) => setImgSrc(url || placeholderUrl(product.name)))
+        .catch(() => setImgSrc(placeholderUrl(product.name)));
+    }
+  }, [product.id, imgSrc, imgError]);
 
   return (
     <motion.div
@@ -22,14 +38,16 @@ export default function ProductCard({ product }) {
       <div className="w-full h-52 bg-muted flex items-center justify-center overflow-hidden">
         {imgError ? (
           <span className="text-8xl select-none">{product.emoji}</span>
-        ) : (
+        ) : imgSrc ? (
           <img
-            src={imageUrl}
+            src={imgSrc}
             alt={product.name}
             onError={() => setImgError(true)}
             className="w-full h-full"
             style={{ objectFit: "contain", borderRadius: "0.5rem", padding: "0.75rem" }}
           />
+        ) : (
+          <span className="text-8xl select-none animate-pulse">{product.emoji}</span>
         )}
       </div>
 

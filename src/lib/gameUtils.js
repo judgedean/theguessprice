@@ -74,10 +74,36 @@ export function getScoreLabel(score) {
   return { label: "Terrible", color: "red", emoji: "🗑️" };
 }
 
+// Fetch a relevant image URL from Wikimedia Commons based on a search term.
+// Returns null if nothing found.
+export async function fetchWikimediaImage(searchTerm) {
+  const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(searchTerm)}&prop=pageimages&format=json&pithumbsize=600&origin=*`;
+  const res = await fetch(url);
+  const data = await res.json();
+  const pages = data?.query?.pages;
+  if (!pages) return null;
+  const page = Object.values(pages)[0];
+  if (page?.thumbnail?.source) return page.thumbnail.source;
+
+  // Fallback: Wikimedia image search
+  const searchUrl = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(searchTerm)}&prop=pageimages&format=json&origin=*`;
+  const searchRes = await fetch(searchUrl);
+  const searchData = await searchRes.json();
+  const firstResult = searchData?.query?.search?.[0];
+  if (!firstResult) return null;
+
+  const detailUrl = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(firstResult.title)}&prop=pageimages&format=json&pithumbsize=600&origin=*`;
+  const detailRes = await fetch(detailUrl);
+  const detailData = await detailRes.json();
+  const detailPages = detailData?.query?.pages;
+  if (!detailPages) return null;
+  const detailPage = Object.values(detailPages)[0];
+  return detailPage?.thumbnail?.source || null;
+}
+
 export function getProductImageUrl(product) {
   if (product.image) return product.image;
-  const label = encodeURIComponent(product.name.replace(/\s+/g, '+').slice(0, 40));
-  return `https://placehold.co/600x400/1a1a2e/00ff66?text=${label}`;
+  return null; // signals ProductCard to fetch dynamically
 }
 
 export function getPurchaseLink(product) {
