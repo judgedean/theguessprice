@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Tag } from "lucide-react";
+import { getProductImageUrl } from "@/lib/gameUtils";
 
 export default function ProductCard({ product }) {
+  const [imgError, setImgError] = useState(false);
+  const imageUrl = getProductImageUrl(product);
+
   return (
     <motion.div
       key={product.id}
@@ -13,17 +18,24 @@ export default function ProductCard({ product }) {
       {/* Neon accent line top */}
       <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-neon to-transparent opacity-60" />
 
-      <div className="p-8 text-center">
-        {/* Emoji */}
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.1, type: "spring", stiffness: 300, damping: 18 }}
-          className="text-8xl mb-5 select-none"
-        >
-          {product.emoji}
-        </motion.div>
+      {/* Product image */}
+      {!imgError ? (
+        <div className="w-full h-52 bg-muted flex items-center justify-center overflow-hidden">
+          <img
+            src={imageUrl}
+            alt={product.name}
+            onError={() => setImgError(true)}
+            className="w-full h-full"
+            style={{ objectFit: "contain", borderRadius: "0.5rem", padding: "0.75rem" }}
+          />
+        </div>
+      ) : (
+        <div className="w-full h-52 flex items-center justify-center bg-muted">
+          <span className="text-8xl select-none">{product.emoji}</span>
+        </div>
+      )}
 
+      <div className="p-6 text-center">
         {/* Category badge */}
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-muted text-muted-foreground text-xs font-mono mb-3">
           <Tag className="w-3 h-3" />

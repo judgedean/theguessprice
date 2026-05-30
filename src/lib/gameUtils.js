@@ -74,6 +74,12 @@ export function getScoreLabel(score) {
   return { label: "Terrible", color: "red", emoji: "🗑️" };
 }
 
+export function getProductImageUrl(product) {
+  if (product.imageUrl) return product.imageUrl;
+  const query = encodeURIComponent(product.name);
+  return `https://source.unsplash.com/600x400/?${query},product`;
+}
+
 export function getPurchaseLink(product) {
   const q = encodeURIComponent(product.name);
   const src = product.source;
