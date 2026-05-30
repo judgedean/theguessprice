@@ -7,7 +7,8 @@ export const PRODUCTS = [
     emoji: "😐",
     price: 24.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80&fit=crop"
   },
   {
     id: 2,
@@ -16,7 +17,8 @@ export const PRODUCTS = [
     emoji: "🥒",
     price: 14.99,
     source: "Amazon",
-    category: "Toys"
+    category: "Toys",
+    imageUrl: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&q=80&fit=crop"
   },
   {
     id: 3,
@@ -25,7 +27,8 @@ export const PRODUCTS = [
     emoji: "🌭",
     price: 29.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1612392062631-94a45cccf492?w=600&q=80&fit=crop"
   },
   {
     id: 4,
@@ -34,7 +37,8 @@ export const PRODUCTS = [
     emoji: "🦄",
     price: 8.49,
     source: "Amazon",
-    category: "Pet Accessories"
+    category: "Pet Accessories",
+    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80&fit=crop"
   },
   {
     id: 5,
@@ -43,7 +47,8 @@ export const PRODUCTS = [
     emoji: "☢️",
     price: 18.50,
     source: "Etsy",
-    category: "Collectibles"
+    category: "Collectibles",
+    imageUrl: "https://images.unsplash.com/photo-1519750783826-e2420f4d687f?w=600&q=80&fit=crop"
   },
   {
     id: 6,
@@ -52,7 +57,8 @@ export const PRODUCTS = [
     emoji: "🐦",
     price: 99.00,
     source: "Amazon",
-    category: "Sleep"
+    category: "Sleep",
+    imageUrl: "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=600&q=80&fit=crop"
   },
   {
     id: 7,
@@ -61,7 +67,8 @@ export const PRODUCTS = [
     emoji: "🍌",
     price: 3.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=600&q=80&fit=crop"
   },
   {
     id: 8,
@@ -70,7 +77,8 @@ export const PRODUCTS = [
     emoji: "🦎",
     price: 59.95,
     source: "Etsy",
-    category: "Costumes"
+    category: "Costumes",
+    imageUrl: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80&fit=crop"
   },
   {
     id: 9,
@@ -79,7 +87,8 @@ export const PRODUCTS = [
     emoji: "🥄",
     price: 24.99,
     source: "Amazon",
-    category: "Survival"
+    category: "Survival",
+    imageUrl: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80&fit=crop"
   },
   {
     id: 10,
@@ -88,7 +97,8 @@ export const PRODUCTS = [
     emoji: "🎸",
     price: 5.99,
     source: "Spencer's",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=600&q=80&fit=crop"
   },
   {
     id: 11,
@@ -97,7 +107,8 @@ export const PRODUCTS = [
     emoji: "💀",
     price: 45.00,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=600&q=80&fit=crop"
   },
   {
     id: 12,
@@ -106,7 +117,8 @@ export const PRODUCTS = [
     emoji: "🥓",
     price: 19.95,
     source: "Amazon",
-    category: "Candles"
+    category: "Candles",
+    imageUrl: "https://images.unsplash.com/photo-1602523961358-f9f03dd557db?w=600&q=80&fit=crop"
   },
   {
     id: 13,
@@ -115,7 +127,8 @@ export const PRODUCTS = [
     emoji: "🌈",
     price: 9.99,
     source: "ThinkGeek",
-    category: "Novelty Food"
+    category: "Novelty Food",
+    imageUrl: "https://images.unsplash.com/photo-1534214526114-0ea4d47b04f2?w=600&q=80&fit=crop"
   },
   {
     id: 14,
@@ -124,7 +137,8 @@ export const PRODUCTS = [
     emoji: "🥚",
     price: 69.99,
     source: "Amazon",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=600&q=80&fit=crop"
   },
   {
     id: 15,
@@ -133,7 +147,8 @@ export const PRODUCTS = [
     emoji: "🚽",
     price: 149.99,
     source: "Hammacher Schlemmer",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1585837146751-a44118595680?w=600&q=80&fit=crop"
   },
 
   // --- TECH & GADGETS ---
@@ -144,7 +159,8 @@ export const PRODUCTS = [
     emoji: "💾",
     price: 22.99,
     source: "Amazon",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=600&q=80&fit=crop"
   },
   {
     id: 17,
@@ -153,7 +169,8 @@ export const PRODUCTS = [
     emoji: "💇",
     price: 199.00,
     source: "HiMirror",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80&fit=crop"
   },
   {
     id: 18,
@@ -162,7 +179,8 @@ export const PRODUCTS = [
     emoji: "🎮",
     price: 1999.00,
     source: "Secretlab",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&q=80&fit=crop"
   },
   {
     id: 19,
@@ -171,7 +189,8 @@ export const PRODUCTS = [
     emoji: "🧈",
     price: 34.99,
     source: "Amazon",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80&fit=crop"
   },
   {
     id: 20,
@@ -180,7 +199,8 @@ export const PRODUCTS = [
     emoji: "🪨",
     price: 39.99,
     source: "Amazon",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1567431239534-9bb97b1e2938?w=600&q=80&fit=crop"
   },
   {
     id: 21,
@@ -189,7 +209,8 @@ export const PRODUCTS = [
     emoji: "🍞",
     price: 79.99,
     source: "Vermont Novelty Toaster Corp",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80&fit=crop"
   },
   {
     id: 22,
@@ -198,7 +219,8 @@ export const PRODUCTS = [
     emoji: "🍴",
     price: 99.00,
     source: "HAPILABS",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=600&q=80&fit=crop"
   },
   {
     id: 23,
@@ -207,7 +229,8 @@ export const PRODUCTS = [
     emoji: "☕",
     price: 49.99,
     source: "Brookstone",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80&fit=crop"
   },
   {
     id: 24,
@@ -216,7 +239,8 @@ export const PRODUCTS = [
     emoji: "📽️",
     price: 2999.00,
     source: "LG",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80&fit=crop"
   },
   {
     id: 25,
@@ -225,7 +249,8 @@ export const PRODUCTS = [
     emoji: "🔌",
     price: 12.99,
     source: "Amazon",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&fit=crop"
   },
 
   // --- BIZARRE DECOR ---
@@ -236,7 +261,8 @@ export const PRODUCTS = [
     emoji: "🦶",
     price: 349.00,
     source: "Wayfair",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1416339442236-8ceb164046f8?w=600&q=80&fit=crop"
   },
   {
     id: 27,
@@ -245,7 +271,8 @@ export const PRODUCTS = [
     emoji: "🐿️",
     price: 21.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&fit=crop"
   },
   {
     id: 28,
@@ -254,7 +281,8 @@ export const PRODUCTS = [
     emoji: "🐴",
     price: 29.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&q=80&fit=crop"
   },
   {
     id: 29,
@@ -263,7 +291,8 @@ export const PRODUCTS = [
     emoji: "🐻",
     price: 39.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&q=80&fit=crop"
   },
   {
     id: 30,
@@ -272,7 +301,8 @@ export const PRODUCTS = [
     emoji: "🦩",
     price: 44.99,
     source: "Etsy",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop"
   },
   {
     id: 31,
@@ -282,7 +312,8 @@ export const PRODUCTS = [
     price: 36.99,
     source: "Amazon",
     category: "Bizarre Decor",
-    amazonLink: "https://amzn.to/4EnsoCC"
+    amazonLink: "https://amzn.to/4EnsoCC",
+    imageUrl: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=600&q=80&fit=crop"
   },
   {
     id: 32,
@@ -291,7 +322,8 @@ export const PRODUCTS = [
     emoji: "⛳",
     price: 18.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=600&q=80&fit=crop"
   },
   {
     id: 33,
@@ -300,7 +332,8 @@ export const PRODUCTS = [
     emoji: "🪩",
     price: 189.00,
     source: "Wayfair",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80&fit=crop"
   },
   {
     id: 34,
@@ -309,7 +342,8 @@ export const PRODUCTS = [
     emoji: "☕",
     price: 69.99,
     source: "Etsy",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1520904574851-b6f2e6f8a3b7?w=600&q=80&fit=crop"
   },
   {
     id: 35,
@@ -318,7 +352,8 @@ export const PRODUCTS = [
     emoji: "🫎",
     price: 79.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=600&q=80&fit=crop"
   },
 
   // --- LUXURY SCAMS ---
@@ -329,7 +364,8 @@ export const PRODUCTS = [
     emoji: "📎",
     price: 95.00,
     source: "Goldgenie",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80&fit=crop"
   },
   {
     id: 37,
@@ -338,7 +374,8 @@ export const PRODUCTS = [
     emoji: "🧊",
     price: 325.00,
     source: "Gläce Luxury Ice",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80&fit=crop"
   },
   {
     id: 38,
@@ -347,7 +384,8 @@ export const PRODUCTS = [
     emoji: "🟠",
     price: 250.00,
     source: "Hermès",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80&fit=crop"
   },
   {
     id: 39,
@@ -356,7 +394,8 @@ export const PRODUCTS = [
     emoji: "💦",
     price: 18.00,
     source: "Sephora",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80&fit=crop"
   },
   {
     id: 40,
@@ -365,7 +404,8 @@ export const PRODUCTS = [
     emoji: "🧱",
     price: 30.00,
     source: "Supreme",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=80&fit=crop"
   },
   {
     id: 41,
@@ -374,7 +414,8 @@ export const PRODUCTS = [
     emoji: "🍸",
     price: 249.99,
     source: "Goldschläger",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80&fit=crop"
   },
   {
     id: 42,
@@ -383,7 +424,8 @@ export const PRODUCTS = [
     emoji: "📌",
     price: 890.00,
     source: "Bottega Veneta",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80&fit=crop"
   },
   {
     id: 43,
@@ -392,7 +434,8 @@ export const PRODUCTS = [
     emoji: "☕",
     price: 149.00,
     source: "Amazon",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80&fit=crop"
   },
   {
     id: 44,
@@ -401,7 +444,8 @@ export const PRODUCTS = [
     emoji: "🎵",
     price: 3200.00,
     source: "Baccarat",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1525201548942-d8732f6617a0?w=600&q=80&fit=crop"
   },
   {
     id: 45,
@@ -410,7 +454,8 @@ export const PRODUCTS = [
     emoji: "🏓",
     price: 840.00,
     source: "Louis Vuitton",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=600&q=80&fit=crop"
   },
 
   // --- NICHE KITCHEN ---
@@ -421,7 +466,8 @@ export const PRODUCTS = [
     emoji: "🍌",
     price: 49.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=600&q=80&fit=crop"
   },
   {
     id: 47,
@@ -430,7 +476,8 @@ export const PRODUCTS = [
     emoji: "🥑",
     price: 14.99,
     source: "OXO",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&q=80&fit=crop"
   },
   {
     id: 48,
@@ -439,7 +486,8 @@ export const PRODUCTS = [
     emoji: "🧈",
     price: 27.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=600&q=80&fit=crop"
   },
   {
     id: 49,
@@ -448,7 +496,8 @@ export const PRODUCTS = [
     emoji: "🍍",
     price: 9.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=600&q=80&fit=crop"
   },
   {
     id: 50,
@@ -457,7 +506,8 @@ export const PRODUCTS = [
     emoji: "🫓",
     price: 24.99,
     source: "Hamilton Beach",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80&fit=crop"
   },
   {
     id: 51,
@@ -466,7 +516,8 @@ export const PRODUCTS = [
     emoji: "🍓",
     price: 6.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=600&q=80&fit=crop"
   },
   {
     id: 52,
@@ -475,7 +526,8 @@ export const PRODUCTS = [
     emoji: "🌽",
     price: 11.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=600&q=80&fit=crop"
   },
   {
     id: 53,
@@ -484,7 +536,8 @@ export const PRODUCTS = [
     emoji: "🍲",
     price: 18.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80&fit=crop"
   },
   {
     id: 54,
@@ -493,7 +546,8 @@ export const PRODUCTS = [
     emoji: "🍒",
     price: 22.99,
     source: "OXO",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1528821128474-27f963b062bf?w=600&q=80&fit=crop"
   },
   {
     id: 55,
@@ -502,7 +556,8 @@ export const PRODUCTS = [
     emoji: "🥚",
     price: 5.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=600&q=80&fit=crop"
   },
   {
     id: 56,
@@ -511,7 +566,8 @@ export const PRODUCTS = [
     emoji: "🍝",
     price: 7.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&q=80&fit=crop"
   },
   {
     id: 57,
@@ -520,7 +576,8 @@ export const PRODUCTS = [
     emoji: "🥪",
     price: 29.99,
     source: "Hamilton Beach",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80&fit=crop"
   },
   {
     id: 58,
@@ -529,7 +586,8 @@ export const PRODUCTS = [
     emoji: "🍜",
     price: 12.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=80&fit=crop"
   },
   {
     id: 59,
@@ -538,7 +596,8 @@ export const PRODUCTS = [
     emoji: "🧅",
     price: 19.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1508747703725-719777637510?w=600&q=80&fit=crop"
   },
   {
     id: 60,
@@ -547,7 +606,8 @@ export const PRODUCTS = [
     emoji: "🍉",
     price: 15.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1563114773-84221bd62daa?w=600&q=80&fit=crop"
   },
 
   // --- MORE BIZARRE & FUNNY ---
@@ -558,7 +618,8 @@ export const PRODUCTS = [
     emoji: "🐎",
     price: 35.00,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&q=80&fit=crop"
   },
   {
     id: 62,
@@ -567,7 +628,8 @@ export const PRODUCTS = [
     emoji: "⛳",
     price: 24.99,
     source: "Amazon",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=600&q=80&fit=crop"
   },
   {
     id: 63,
@@ -576,7 +638,8 @@ export const PRODUCTS = [
     emoji: "🌱",
     price: 16.99,
     source: "Amazon",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80&fit=crop"
   },
   {
     id: 64,
@@ -585,7 +648,8 @@ export const PRODUCTS = [
     emoji: "🕷️",
     price: 27.99,
     source: "Amazon",
-    category: "Toys"
+    category: "Toys",
+    imageUrl: "https://images.unsplash.com/photo-1568041487433-25c5568aa8b5?w=600&q=80&fit=crop"
   },
   {
     id: 65,
@@ -594,7 +658,8 @@ export const PRODUCTS = [
     emoji: "🤼",
     price: 59.99,
     source: "Amazon",
-    category: "Toys"
+    category: "Toys",
+    imageUrl: "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=600&q=80&fit=crop"
   },
   {
     id: 66,
@@ -603,7 +668,8 @@ export const PRODUCTS = [
     emoji: "🖐️",
     price: 7.99,
     source: "Amazon",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=600&q=80&fit=crop"
   },
   {
     id: 67,
@@ -612,7 +678,8 @@ export const PRODUCTS = [
     emoji: "🐐",
     price: 12.99,
     source: "Amazon",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1524024973431-2ad916746881?w=600&q=80&fit=crop"
   },
   {
     id: 68,
@@ -621,7 +688,8 @@ export const PRODUCTS = [
     emoji: "🚽",
     price: 24.99,
     source: "Amazon",
-    category: "Home"
+    category: "Home",
+    imageUrl: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80&fit=crop"
   },
   {
     id: 69,
@@ -630,7 +698,8 @@ export const PRODUCTS = [
     emoji: "🔨",
     price: 19.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80&fit=crop"
   },
   {
     id: 70,
@@ -639,7 +708,8 @@ export const PRODUCTS = [
     emoji: "🐷",
     price: 199.00,
     source: "D'Artagnan",
-    category: "Novelty Food"
+    category: "Novelty Food",
+    imageUrl: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80&fit=crop"
   },
   {
     id: 71,
@@ -648,7 +718,8 @@ export const PRODUCTS = [
     emoji: "🦥",
     price: 16.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1602524811260-c70c84aa8e5e?w=600&q=80&fit=crop"
   },
   {
     id: 72,
@@ -657,7 +728,8 @@ export const PRODUCTS = [
     emoji: "🍷",
     price: 12.99,
     source: "Amazon",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80&fit=crop"
   },
   {
     id: 73,
@@ -666,7 +738,8 @@ export const PRODUCTS = [
     emoji: "🧟",
     price: 34.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=600&q=80&fit=crop"
   },
   {
     id: 74,
@@ -675,7 +748,8 @@ export const PRODUCTS = [
     emoji: "🐕",
     price: 19.99,
     source: "Amazon",
-    category: "Pet Accessories"
+    category: "Pet Accessories",
+    imageUrl: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80&fit=crop"
   },
   {
     id: 75,
@@ -684,7 +758,8 @@ export const PRODUCTS = [
     emoji: "🦖",
     price: 44.99,
     source: "Amazon",
-    category: "Costumes"
+    category: "Costumes",
+    imageUrl: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80&fit=crop"
   },
   {
     id: 76,
@@ -693,7 +768,8 @@ export const PRODUCTS = [
     emoji: "👃",
     price: 8.99,
     source: "Etsy",
-    category: "Novelty Food"
+    category: "Novelty Food",
+    imageUrl: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&q=80&fit=crop"
   },
   {
     id: 77,
@@ -702,7 +778,8 @@ export const PRODUCTS = [
     emoji: "🍽️",
     price: 39.99,
     source: "Etsy",
-    category: "Collectibles"
+    category: "Collectibles",
+    imageUrl: "https://images.unsplash.com/photo-1603200628968-23e6a8e5e0fb?w=600&q=80&fit=crop"
   },
   {
     id: 78,
@@ -711,7 +788,8 @@ export const PRODUCTS = [
     emoji: "🧹",
     price: 11.99,
     source: "Amazon",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop"
   },
   {
     id: 79,
@@ -720,7 +798,8 @@ export const PRODUCTS = [
     emoji: "💋",
     price: 4.99,
     source: "Amazon",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1586495777744-4e6232bf5c8e?w=600&q=80&fit=crop"
   },
   {
     id: 80,
@@ -729,7 +808,8 @@ export const PRODUCTS = [
     emoji: "🧸",
     price: 179.99,
     source: "Amazon",
-    category: "Toys"
+    category: "Toys",
+    imageUrl: "https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=600&q=80&fit=crop"
   },
   {
     id: 81,
@@ -738,7 +818,8 @@ export const PRODUCTS = [
     emoji: "🐹",
     price: 699.00,
     source: "Wayfair",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80&fit=crop"
   },
   {
     id: 82,
@@ -747,7 +828,8 @@ export const PRODUCTS = [
     emoji: "🍄",
     price: 59.99,
     source: "Etsy",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&fit=crop"
   },
   {
     id: 83,
@@ -756,7 +838,8 @@ export const PRODUCTS = [
     emoji: "🍕",
     price: 49.99,
     source: "Amazon",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&q=80&fit=crop"
   },
   {
     id: 84,
@@ -765,7 +848,8 @@ export const PRODUCTS = [
     emoji: "📱",
     price: 8.99,
     source: "Amazon",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1585837146751-a44118595680?w=600&q=80&fit=crop"
   },
   {
     id: 85,
@@ -774,7 +858,8 @@ export const PRODUCTS = [
     emoji: "🌶️",
     price: 9.99,
     source: "Amazon",
-    category: "Novelty Food"
+    category: "Novelty Food",
+    imageUrl: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=600&q=80&fit=crop"
   },
   {
     id: 86,
@@ -783,7 +868,8 @@ export const PRODUCTS = [
     emoji: "🦕",
     price: 13.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80&fit=crop"
   },
   {
     id: 87,
@@ -792,7 +878,8 @@ export const PRODUCTS = [
     emoji: "💳",
     price: 89.99,
     source: "Amazon",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1627843563095-f6e53838c9c0?w=600&q=80&fit=crop"
   },
   {
     id: 88,
@@ -801,7 +888,8 @@ export const PRODUCTS = [
     emoji: "🐱",
     price: 17.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=600&q=80&fit=crop"
   },
   {
     id: 89,
@@ -810,7 +898,8 @@ export const PRODUCTS = [
     emoji: "☕",
     price: 69.99,
     source: "Wacaco",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80&fit=crop"
   },
   {
     id: 90,
@@ -819,7 +908,8 @@ export const PRODUCTS = [
     emoji: "🌍",
     price: 119.99,
     source: "Amazon",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80&fit=crop"
   },
   {
     id: 91,
@@ -828,7 +918,8 @@ export const PRODUCTS = [
     emoji: "🥒",
     price: 7.99,
     source: "Amazon",
-    category: "Novelty Food"
+    category: "Novelty Food",
+    imageUrl: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&q=80&fit=crop"
   },
   {
     id: 92,
@@ -837,7 +928,8 @@ export const PRODUCTS = [
     emoji: "⌨️",
     price: 18.99,
     source: "Amazon",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&q=80&fit=crop"
   },
   {
     id: 93,
@@ -846,7 +938,8 @@ export const PRODUCTS = [
     emoji: "🍌",
     price: 9.99,
     source: "Amazon",
-    category: "Novelty"
+    category: "Novelty",
+    imageUrl: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=600&q=80&fit=crop"
   },
   {
     id: 94,
@@ -855,7 +948,8 @@ export const PRODUCTS = [
     emoji: "☄️",
     price: 39.99,
     source: "Etsy",
-    category: "Collectibles"
+    category: "Collectibles",
+    imageUrl: "https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=600&q=80&fit=crop"
   },
   {
     id: 95,
@@ -864,7 +958,8 @@ export const PRODUCTS = [
     emoji: "🦞",
     price: 18.99,
     source: "Amazon",
-    category: "Niche Kitchen"
+    category: "Niche Kitchen",
+    imageUrl: "https://images.unsplash.com/photo-1602524811260-c70c84aa8e5e?w=600&q=80&fit=crop"
   },
   {
     id: 96,
@@ -873,7 +968,8 @@ export const PRODUCTS = [
     emoji: "🍾",
     price: 32.99,
     source: "Amazon",
-    category: "Novelty Food"
+    category: "Novelty Food",
+    imageUrl: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&q=80&fit=crop"
   },
   {
     id: 97,
@@ -882,7 +978,8 @@ export const PRODUCTS = [
     emoji: "⚔️",
     price: 2399.00,
     source: "Wayfair",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=600&q=80&fit=crop"
   },
   {
     id: 98,
@@ -891,7 +988,8 @@ export const PRODUCTS = [
     emoji: "☕",
     price: 149.95,
     source: "Ember",
-    category: "Tech & Gadgets"
+    category: "Tech & Gadgets",
+    imageUrl: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&q=80&fit=crop"
   },
   {
     id: 99,
@@ -900,7 +998,8 @@ export const PRODUCTS = [
     emoji: "🐸",
     price: 74.99,
     source: "Etsy",
-    category: "Bizarre Decor"
+    category: "Bizarre Decor",
+    imageUrl: "https://images.unsplash.com/photo-1524024973431-2ad916746881?w=600&q=80&fit=crop"
   },
   {
     id: 100,
@@ -909,7 +1008,8 @@ export const PRODUCTS = [
     emoji: "🎲",
     price: 9900.00,
     source: "Franklin Mint",
-    category: "Luxury Scams"
+    category: "Luxury Scams",
+    imageUrl: "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=80&fit=crop"
   }
 ];
 
