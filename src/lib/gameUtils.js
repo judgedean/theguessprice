@@ -29,9 +29,9 @@ export function formatPrice(price, showCurrency = false) {
 // Tier thresholds (percentage difference from actual price)
 export const TIER_THRESHOLDS = {
   tier3: 0.05,  // within 5%
-  tier2: 0.20,  // within 20% (but > 5%)
-  tier1: 0.50,  // within 50% (but > 20%)
-  // tier0: > 50%
+  tier2: 0.15,  // within 15% (but > 5%)
+  tier1: 0.30,  // within 30% (but > 15%)
+  // tier0: > 30% (or > 50% for lowest score)
 };
 
 export function getGuessTier(guessedPrice, actualPrice) {
@@ -56,13 +56,18 @@ export function calculateScore(guessedPrice, actualPrice) {
     return Math.round(94 - t * 24);
   }
   if (pct <= TIER_THRESHOLDS.tier1) {
-    // 30–69 pts: within 50%
+    // 30–69 pts: within 30%
     const t = (pct - TIER_THRESHOLDS.tier2) / (TIER_THRESHOLDS.tier1 - TIER_THRESHOLDS.tier2);
     return Math.round(69 - t * 39);
   }
-  // 0–29 pts: more than 50% off
-  const t = Math.min(1, (pct - TIER_THRESHOLDS.tier1) / TIER_THRESHOLDS.tier1);
-  return Math.round(29 - t * 29);
+  if (pct <= 0.50) {
+    // 10–29 pts: within 50%
+    const t = (pct - TIER_THRESHOLDS.tier1) / (0.50 - TIER_THRESHOLDS.tier1);
+    return Math.round(29 - t * 19);
+  }
+  // 0–9 pts: more than 50% off
+  const t = Math.min(1, (pct - 0.50) / 0.50);
+  return Math.round(9 - t * 9);
 }
 
 export function getScoreLabel(score) {
