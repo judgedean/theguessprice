@@ -7,7 +7,7 @@ export const PRODUCTS = [
     price: 24.99,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/71K7zKfIjhL._AC_SX679_.jpg"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const PRODUCTS = [
     price: 14.99,
     source: "Amazon",
     category: "Toys",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/61wqFlUYGBL._AC_SL1500_.jpg"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const PRODUCTS = [
     price: 29.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/71pJg-m2RlL._AC_SL1500_.jpg"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const PRODUCTS = [
     price: 8.49,
     source: "Amazon",
     category: "Pet Accessories",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/810SPQb40HL._AC_SL1500_.jpg"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const PRODUCTS = [
     price: 3.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/6110hIkuEfL._AC_SL1500_.jpg"
   },
 ];
 
