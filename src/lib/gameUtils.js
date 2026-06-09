@@ -116,6 +116,7 @@ export function getPurchaseLink(product) {
   const src = product.source;
   if (src === "Amazon") return product.amazonLink || `https://www.amazon.com/s?k=${q}&tag=theguessprice-20`;
   if (src === "Etsy") return `https://www.etsy.com/search?q=${q}`;
+  if (src === "Uncommon Goods") return `https://www.uncommongoods.com/search?q=${q}`;
   if (src === "IWOOT") return `https://www.iwantoneofthose.com/elysium.search?search=${q}`;
   if (src === "Hammacher Schlemmer") return `https://www.hammacher.com/search/default.aspx?query=${q}`;
   return `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(src + " " + product.name)}`;
