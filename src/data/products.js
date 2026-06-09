@@ -11,7 +11,7 @@ export const PRODUCTS = [
     price: 3.99,
     source: "Amazon",
     category: "Novelty",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/6110hIkuEfL._AC_SX679_.jpg"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const PRODUCTS = [
     price: 14.99,
     source: "Amazon",
     category: "Novelty",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/61wqFlUYGBL._AC_SL1500_.jpg"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const PRODUCTS = [
     price: 7.99,
     source: "Amazon",
     category: "Novelty",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/7168y97ZEEL._AC_SL1500_.jpg"
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const PRODUCTS = [
     price: 12.99,
     source: "Amazon",
     category: "Novelty",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/51H9d6JV+JL._AC_SL1500_.jpg""
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ export const PRODUCTS = [
     price: 29.99,
     source: "Amazon",
     category: "Novelty",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/71-2lwWT93L._AC_SX679_.jpg"
   },
   {
     id: 6,
