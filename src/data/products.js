@@ -61,7 +61,7 @@ export const PRODUCTS = [
     price: 24.99,
     source: "Amazon",
     category: "Novelty",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/71K7zKfIjhL._AC_SX679_.jpg"
   },
   {
     id: 7,
@@ -71,7 +71,7 @@ export const PRODUCTS = [
     price: 4.99,
     source: "Amazon",
     category: "Novelty",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/71TVxM87PIL._AC_SL1000_.jpg"
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ export const PRODUCTS = [
     price: 8.49,
     source: "Amazon",
     category: "Pet Accessories",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/810SPQb40HL._AC_SL1500_.jpg"
   },
 
   // Niche Kitchen ($5-$100)
@@ -93,7 +93,7 @@ export const PRODUCTS = [
     price: 6.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/61DbKj66z1L._AC_SL1500_.jpg"
   },
   {
     id: 10,
@@ -103,7 +103,7 @@ export const PRODUCTS = [
     price: 9.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "https://m.media-amazon.com/images/I/71B3lRUU5wL._AC_SL1500_.jpg"
   },
   {
     id: 11,
