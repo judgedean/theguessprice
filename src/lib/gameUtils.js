@@ -112,6 +112,15 @@ export function getProductImageUrl(product) {
 }
 
 export function getPurchaseLink(product) {
+  // Prefer a direct link to the exact listing if one is provided
+  if (product.url) {
+    // Append Amazon affiliate tag automatically for Amazon links
+    if (product.source === "Amazon" && !product.url.includes("tag=")) {
+      const sep = product.url.includes("?") ? "&" : "?";
+      return `${product.url}${sep}tag=theguessprice-20`;
+    }
+    return product.url;
+  }
   const q = encodeURIComponent(product.name);
   const src = product.source;
   if (src === "Amazon") return product.amazonLink || `https://www.amazon.com/s?k=${q}&tag=theguessprice-20`;
