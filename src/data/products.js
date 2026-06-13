@@ -11,7 +11,8 @@ export const PRODUCTS = [
     price: 3.99,
     source: "Amazon",
     category: "Novelty",
-    image: "https://m.media-amazon.com/images/I/6110hIkuEfL._AC_SX679_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ export const PRODUCTS = [
     price: 14.99,
     source: "Amazon",
     category: "Novelty",
-    image: "https://m.media-amazon.com/images/I/61wqFlUYGBL._AC_SL1500_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 3,
@@ -31,7 +33,8 @@ export const PRODUCTS = [
     price: 7.99,
     source: "Amazon",
     category: "Novelty",
-    image: "https://m.media-amazon.com/images/I/7168y97ZEEL._AC_SL1500_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 4,
@@ -41,7 +44,8 @@ export const PRODUCTS = [
     price: 12.99,
     source: "Amazon",
     category: "Novelty",
-    image: "https://m.media-amazon.com/images/I/51H9d6JV+JL._AC_SL1500_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 5,
@@ -51,7 +55,8 @@ export const PRODUCTS = [
     price: 29.99,
     source: "Amazon",
     category: "Novelty",
-    image: "https://m.media-amazon.com/images/I/71-2lwWT93L._AC_SX679_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 6,
@@ -61,7 +66,8 @@ export const PRODUCTS = [
     price: 24.99,
     source: "Amazon",
     category: "Novelty",
-    image: "https://m.media-amazon.com/images/I/71K7zKfIjhL._AC_SX679_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 7,
@@ -71,7 +77,8 @@ export const PRODUCTS = [
     price: 4.99,
     source: "Amazon",
     category: "Novelty",
-    image: "https://m.media-amazon.com/images/I/71TVxM87PIL._AC_SL1000_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 8,
@@ -81,7 +88,8 @@ export const PRODUCTS = [
     price: 8.49,
     source: "Amazon",
     category: "Pet Accessories",
-    image: "https://m.media-amazon.com/images/I/810SPQb40HL._AC_SL1500_.jpg"
+    image: "",
+    url: ""
   },
 
   // Niche Kitchen ($5-$100)
@@ -93,7 +101,8 @@ export const PRODUCTS = [
     price: 6.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: "https://m.media-amazon.com/images/I/61DbKj66z1L._AC_SL1500_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 10,
@@ -103,7 +112,8 @@ export const PRODUCTS = [
     price: 9.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: "https://m.media-amazon.com/images/I/71B3lRUU5wL._AC_SL1500_.jpg"
+    image: "",
+    url: ""
   },
   {
     id: 11,
@@ -113,7 +123,8 @@ export const PRODUCTS = [
     price: 11.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 12,
@@ -123,7 +134,8 @@ export const PRODUCTS = [
     price: 5.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 13,
@@ -133,7 +145,8 @@ export const PRODUCTS = [
     price: 19.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 14,
@@ -143,7 +156,8 @@ export const PRODUCTS = [
     price: 29.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 15,
@@ -153,7 +167,8 @@ export const PRODUCTS = [
     price: 18.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 16,
@@ -163,7 +178,8 @@ export const PRODUCTS = [
     price: 29.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 17,
@@ -173,7 +189,8 @@ export const PRODUCTS = [
     price: 15.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 18,
@@ -183,7 +200,8 @@ export const PRODUCTS = [
     price: 19.99,
     source: "Amazon",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
 
   // Bizarre Decor ($20-$500)
@@ -195,7 +213,8 @@ export const PRODUCTS = [
     price: 21.99,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 20,
@@ -205,7 +224,8 @@ export const PRODUCTS = [
     price: 34.99,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 21,
@@ -215,7 +235,8 @@ export const PRODUCTS = [
     price: 39.99,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 22,
@@ -225,7 +246,8 @@ export const PRODUCTS = [
     price: 45.00,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 23,
@@ -235,7 +257,8 @@ export const PRODUCTS = [
     price: 44.99,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 24,
@@ -245,7 +268,8 @@ export const PRODUCTS = [
     price: 36.99,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 25,
@@ -255,7 +279,8 @@ export const PRODUCTS = [
     price: 189.00,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 26,
@@ -265,7 +290,8 @@ export const PRODUCTS = [
     price: 349.00,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
 
   // Tech & Gadgets ($10-$3000)
@@ -277,7 +303,8 @@ export const PRODUCTS = [
     price: 11.99,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 28,
@@ -287,7 +314,8 @@ export const PRODUCTS = [
     price: 69.99,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 29,
@@ -297,7 +325,8 @@ export const PRODUCTS = [
     price: 18.99,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 30,
@@ -307,7 +336,8 @@ export const PRODUCTS = [
     price: 24.99,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 31,
@@ -317,7 +347,8 @@ export const PRODUCTS = [
     price: 99.00,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 32,
@@ -327,7 +358,8 @@ export const PRODUCTS = [
     price: 149.95,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 33,
@@ -337,7 +369,8 @@ export const PRODUCTS = [
     price: 79.99,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 34,
@@ -347,7 +380,8 @@ export const PRODUCTS = [
     price: 99.00,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
 
   // Novelty Food ($5-$200)
@@ -359,7 +393,8 @@ export const PRODUCTS = [
     price: 9.99,
     source: "Amazon",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 36,
@@ -369,7 +404,8 @@ export const PRODUCTS = [
     price: 7.99,
     source: "Amazon",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 37,
@@ -379,7 +415,8 @@ export const PRODUCTS = [
     price: 49.99,
     source: "Amazon",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 38,
@@ -389,7 +426,8 @@ export const PRODUCTS = [
     price: 149.00,
     source: "Amazon",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
 
   // Luxury Scams ($18-$3000)
@@ -401,7 +439,8 @@ export const PRODUCTS = [
     price: 30.00,
     source: "Amazon",
     category: "Luxury Scams",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 40,
@@ -411,7 +450,8 @@ export const PRODUCTS = [
     price: 18.00,
     source: "Amazon",
     category: "Luxury Scams",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 41,
@@ -421,7 +461,8 @@ export const PRODUCTS = [
     price: 89.99,
     source: "Amazon",
     category: "Luxury Scams",
-    image: ""
+    image: "",
+    url: ""
   },
 
   // Toys & Games ($15-$700)
@@ -433,7 +474,8 @@ export const PRODUCTS = [
     price: 27.99,
     source: "Amazon",
     category: "Toys",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 43,
@@ -443,7 +485,8 @@ export const PRODUCTS = [
     price: 59.99,
     source: "Amazon",
     category: "Toys",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 44,
@@ -453,7 +496,8 @@ export const PRODUCTS = [
     price: 179.99,
     source: "Amazon",
     category: "Toys",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 45,
@@ -463,7 +507,8 @@ export const PRODUCTS = [
     price: 16.99,
     source: "Amazon",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
 
   // Big Ticket ($100-$3000)
@@ -475,7 +520,8 @@ export const PRODUCTS = [
     price: 119.99,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 47,
@@ -485,7 +531,8 @@ export const PRODUCTS = [
     price: 49.99,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 48,
@@ -495,7 +542,8 @@ export const PRODUCTS = [
     price: 549.00,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 49,
@@ -505,7 +553,8 @@ export const PRODUCTS = [
     price: 2999.00,
     source: "Amazon",
     category: "Tech & Gadgets",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 50,
@@ -515,7 +564,8 @@ export const PRODUCTS = [
     price: 699.00,
     source: "Amazon",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
 
   // --- ETSY (30 products) ---
@@ -528,7 +578,8 @@ export const PRODUCTS = [
     price: 18.50,
     source: "Etsy",
     category: "Collectibles",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 52,
@@ -538,7 +589,8 @@ export const PRODUCTS = [
     price: 74.99,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 53,
@@ -548,7 +600,8 @@ export const PRODUCTS = [
     price: 8.99,
     source: "Etsy",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 54,
@@ -558,7 +611,8 @@ export const PRODUCTS = [
     price: 39.99,
     source: "Etsy",
     category: "Collectibles",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 55,
@@ -568,7 +622,8 @@ export const PRODUCTS = [
     price: 39.99,
     source: "Etsy",
     category: "Collectibles",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 56,
@@ -578,7 +633,8 @@ export const PRODUCTS = [
     price: 59.99,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 57,
@@ -588,7 +644,8 @@ export const PRODUCTS = [
     price: 44.99,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 58,
@@ -598,7 +655,8 @@ export const PRODUCTS = [
     price: 69.99,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 59,
@@ -608,7 +666,8 @@ export const PRODUCTS = [
     price: 89.00,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 60,
@@ -618,7 +677,8 @@ export const PRODUCTS = [
     price: 9.99,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 61,
@@ -628,7 +688,8 @@ export const PRODUCTS = [
     price: 24.99,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 62,
@@ -638,7 +699,8 @@ export const PRODUCTS = [
     price: 34.99,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 63,
@@ -648,7 +710,8 @@ export const PRODUCTS = [
     price: 22.00,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 64,
@@ -658,7 +721,8 @@ export const PRODUCTS = [
     price: 14.99,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 65,
@@ -668,7 +732,8 @@ export const PRODUCTS = [
     price: 12.99,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 66,
@@ -678,7 +743,8 @@ export const PRODUCTS = [
     price: 28.00,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 67,
@@ -688,7 +754,8 @@ export const PRODUCTS = [
     price: 19.99,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 68,
@@ -698,7 +765,8 @@ export const PRODUCTS = [
     price: 55.00,
     source: "Etsy",
     category: "Collectibles",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 69,
@@ -708,7 +776,8 @@ export const PRODUCTS = [
     price: 32.00,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 70,
@@ -718,7 +787,8 @@ export const PRODUCTS = [
     price: 49.00,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 71,
@@ -728,7 +798,8 @@ export const PRODUCTS = [
     price: 29.99,
     source: "Etsy",
     category: "Collectibles",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 72,
@@ -738,7 +809,8 @@ export const PRODUCTS = [
     price: 11.00,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 73,
@@ -748,7 +820,8 @@ export const PRODUCTS = [
     price: 99.00,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 74,
@@ -758,7 +831,8 @@ export const PRODUCTS = [
     price: 54.00,
     source: "Etsy",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 75,
@@ -768,7 +842,8 @@ export const PRODUCTS = [
     price: 16.00,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 76,
@@ -778,7 +853,8 @@ export const PRODUCTS = [
     price: 185.00,
     source: "Etsy",
     category: "Collectibles",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 77,
@@ -788,7 +864,8 @@ export const PRODUCTS = [
     price: 21.00,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 78,
@@ -798,7 +875,8 @@ export const PRODUCTS = [
     price: 13.99,
     source: "Etsy",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 79,
@@ -808,7 +886,8 @@ export const PRODUCTS = [
     price: 38.00,
     source: "Etsy",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 80,
@@ -818,7 +897,8 @@ export const PRODUCTS = [
     price: 45.00,
     source: "Etsy",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
 
   // --- UNCOMMON GOODS (20 products) ---
@@ -831,7 +911,8 @@ export const PRODUCTS = [
     price: 34.00,
     source: "Uncommon Goods",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 82,
@@ -841,7 +922,8 @@ export const PRODUCTS = [
     price: 75.00,
     source: "Uncommon Goods",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 83,
@@ -851,7 +933,8 @@ export const PRODUCTS = [
     price: 28.00,
     source: "Uncommon Goods",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 84,
@@ -861,7 +944,8 @@ export const PRODUCTS = [
     price: 48.00,
     source: "Uncommon Goods",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 85,
@@ -871,7 +955,8 @@ export const PRODUCTS = [
     price: 35.00,
     source: "Uncommon Goods",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 86,
@@ -881,7 +966,8 @@ export const PRODUCTS = [
     price: 22.00,
     source: "Uncommon Goods",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 87,
@@ -891,7 +977,8 @@ export const PRODUCTS = [
     price: 89.00,
     source: "Uncommon Goods",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 88,
@@ -901,7 +988,8 @@ export const PRODUCTS = [
     price: 19.00,
     source: "Uncommon Goods",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 89,
@@ -911,7 +999,8 @@ export const PRODUCTS = [
     price: 44.00,
     source: "Uncommon Goods",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 90,
@@ -921,7 +1010,8 @@ export const PRODUCTS = [
     price: 129.00,
     source: "Uncommon Goods",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 91,
@@ -931,7 +1021,8 @@ export const PRODUCTS = [
     price: 12.00,
     source: "Uncommon Goods",
     category: "Novelty Food",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 92,
@@ -941,7 +1032,8 @@ export const PRODUCTS = [
     price: 58.00,
     source: "Uncommon Goods",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 93,
@@ -951,7 +1043,8 @@ export const PRODUCTS = [
     price: 32.00,
     source: "Uncommon Goods",
     category: "Niche Kitchen",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 94,
@@ -961,7 +1054,8 @@ export const PRODUCTS = [
     price: 119.00,
     source: "Uncommon Goods",
     category: "Bizarre Decor",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 95,
@@ -971,7 +1065,8 @@ export const PRODUCTS = [
     price: 24.00,
     source: "Uncommon Goods",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 96,
@@ -981,7 +1076,8 @@ export const PRODUCTS = [
     price: 249.00,
     source: "Uncommon Goods",
     category: "Toys",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 97,
@@ -991,7 +1087,8 @@ export const PRODUCTS = [
     price: 149.00,
     source: "Uncommon Goods",
     category: "Luxury Scams",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 98,
@@ -1001,7 +1098,8 @@ export const PRODUCTS = [
     price: 189.00,
     source: "Uncommon Goods",
     category: "Novelty",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 99,
@@ -1011,7 +1109,8 @@ export const PRODUCTS = [
     price: 485.00,
     source: "Uncommon Goods",
     category: "Luxury Scams",
-    image: ""
+    image: "",
+    url: ""
   },
   {
     id: 100,
@@ -1021,7 +1120,8 @@ export const PRODUCTS = [
     price: 999.00,
     source: "Uncommon Goods",
     category: "Luxury Scams",
-    image: ""
+    image: "",
+    url: ""
   },
 ];
 
