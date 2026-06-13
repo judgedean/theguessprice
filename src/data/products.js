@@ -41,7 +41,7 @@ export const PRODUCTS = [
     price: 12.99,
     source: "Amazon",
     category: "Novelty",
-    image: "https://m.media-amazon.com/images/I/51H9d6JV+JL._AC_SL1500_.jpg""
+    image: "https://m.media-amazon.com/images/I/51H9d6JV+JL._AC_SL1500_.jpg"
   },
   {
     id: 5,
