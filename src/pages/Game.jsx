@@ -87,6 +87,7 @@ export default function Game() {
           )}
           <div className="w-28 flex items-center justify-end gap-2">
             <Link to="/blog" className="hidden sm:inline text-xs font-mono text-muted-foreground hover:text-neon transition-colors">Blog</Link>
+            <Link to="/about" className="hidden sm:inline text-xs font-mono text-muted-foreground hover:text-neon transition-colors">About</Link>
             <MuteButton />
             {phase !== "results" && completedRounds.length > 0 && (
               <ScoreStrip rounds={completedRounds} currentRound={round} />
