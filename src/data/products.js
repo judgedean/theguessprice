@@ -1110,3 +1110,10 @@ export const PRODUCTS = [
   },
 
 ];
+
+];
+
+export function getRandomProducts(count = 5) {
+  const shuffled = [...PRODUCTS].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
+}
