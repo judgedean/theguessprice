@@ -13,11 +13,11 @@ const RETAILER_STYLES = {
     shadow: "0 0 8px rgba(242,113,28,0.35)",
   },
   Vat19: {
-    border: "border-[#FF6600]/60",
-    text: "text-[#FF6600]",
-    hover: "hover:bg-[#FF6600]/10",
-    shadow: "0 0 8px rgba(255,102,0,0.35)",
-  },
+    border: "border-[#CC0000]/60",
+    text: "text-[#CC0000]",
+    hover: "hover:bg-[#CC0000]/10",
+    shadow: "0 0 8px rgba(204,0,0,0.35)",
+},
   "Hammacher Schlemmer": {
     border: "border-[#002F6C]/80",
     text: "text-[#4a90d9]",
