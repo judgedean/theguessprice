@@ -12,6 +12,12 @@ const RETAILER_STYLES = {
     hover: "hover:bg-[#F2711C]/10",
     shadow: "0 0 8px rgba(242,113,28,0.35)",
   },
+  Vat19: {
+    border: "border-[#FF6600]/60",
+    text: "text-[#FF6600]",
+    hover: "hover:bg-[#FF6600]/10",
+    shadow: "0 0 8px rgba(255,102,0,0.35)",
+  },
   "Hammacher Schlemmer": {
     border: "border-[#002F6C]/80",
     text: "text-[#4a90d9]",
@@ -45,6 +51,7 @@ function getFaviconUrl(source) {
   const domainMap = {
     Amazon: "amazon.com",
     Etsy: "etsy.com",
+    Vat19: "vat19.com",
     "Hammacher Schlemmer": "hammacher.com",
     "Louis Vuitton": "louisvuitton.com",
     "Hermès": "hermes.com",
