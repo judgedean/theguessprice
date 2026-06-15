@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import { getRandomProducts } from "@/data/products";
 import { priceToSlider } from "@/lib/gameUtils";
 import RoundBadge from "@/components/game/RoundBadge";
@@ -85,6 +86,7 @@ export default function Game() {
             <RoundBadge current={round} total={TOTAL_ROUNDS} />
           )}
           <div className="w-28 flex items-center justify-end gap-2">
+            <Link to="/blog" className="hidden sm:inline text-xs font-mono text-muted-foreground hover:text-neon transition-colors">Blog</Link>
             <MuteButton />
             {phase !== "results" && completedRounds.length > 0 && (
               <ScoreStrip rounds={completedRounds} currentRound={round} />

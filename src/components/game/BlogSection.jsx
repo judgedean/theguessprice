@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { blogPosts } from "@/data/blogPosts";
+import { BLOG_POSTS as blogPosts } from "@/data/blogPosts";
 import ReactMarkdown from "react-markdown";
 
 function BlogCard({ post, onOpen }) {

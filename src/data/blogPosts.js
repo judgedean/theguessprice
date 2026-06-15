@@ -1,117 +1,222 @@
-export const blogPosts = [
+export const BLOG_POSTS = [
   {
-    slug: "why-we-love-weird-gadgets",
-    emoji: "🤖",
-    title: "Why We Love Weird Gadgets",
-    subtitle: "The psychology behind our obsession with bizarre, pointless, and overpriced tech.",
-    date: "May 2026",
-    readTime: "3 min read",
-    content: `There's something deeply human about a $400 smart fork that tracks how fast you eat, or a $200 pillow that monitors your sleep breathing patterns and sends the data to an app you'll open twice. We know these products are absurd. We know we don't need them. And yet — we *want* them.
+    slug: "weirdest-products-online",
+    title: "The Weirdest Products You Can Actually Buy Online (And What They Cost)",
+    date: "June 1, 2025",
+    excerpt: "From yodelling pickles to inflatable unicorn horns, the internet is full of bizarre products that are completely, genuinely real — and sometimes surprisingly expensive.",
+    metaDescription: "Discover the weirdest products you can actually buy online right now, with real prices. Yodelling pickles, horse head masks, and more bizarre finds.",
+    content: `The internet has given us many gifts. Streaming, same-day delivery, the ability to video call anyone on Earth. But perhaps its greatest achievement is making it possible to buy a battery-powered pickle that yodels — and have it arrive at your door in two days.
 
-**The Novelty Reflex**
+Welcome to the weird side of online shopping.
 
-Our brains are wired to seek novelty. Dopamine — the neurotransmitter behind pleasure and motivation — fires hardest when we encounter something unexpected. A regular fork? Zero dopamine. A fork with Bluetooth connectivity and a companion subscription service? Neurological fireworks. Marketers figured this out decades ago. The weird gadget industry is essentially a dopamine delivery mechanism dressed up as consumer electronics.
+**The Yodelling Pickle ($9.25)**
 
-**Solving Problems We Don't Have**
+Let's start with a classic. The Archie McPhee Yodelling Pickle is a battery-powered gherkin that, when you press its belly, launches into a full yodel. It has thousands of reviews on Amazon. People buy it earnestly. It has a 4.5-star rating. There is nothing wrong with this world.
 
-The best weird gadgets solve problems so obscure you never knew you had them. A device that automatically stirs your coffee. A machine that folds your clothes. A sensor that tells you if your houseplant is thirsty (spoiler: you could just look at it). The appeal isn't utility — it's the fantasy of a perfectly optimised life where every minor friction has been smoothed away by technology.
+**The Horse Head Mask ($12.99)**
 
-This is why the price rarely matters as much as it should. When you're buying a solution to an imaginary problem, you're not making a rational economic calculation. You're buying a feeling.
+Originally a novelty Halloween costume, the full-size latex horse head mask became a genuine cultural phenomenon. People wear it to job interviews (unconfirmed but widely reported), family portraits, and Zoom calls. It costs less than a decent lunch and will outlive us all.
 
-**The Gift Economy**
+**The Squatty Potty ($24.99)**
 
-Weird gadgets also thrive because of gifting. Nobody buys themselves a $90 avocado slicer with LED mood lighting. But someone absolutely buys it for their brother-in-law for Christmas. The weirder and more niche the product, the more it signals *I saw this and thought of you specifically* — which is the entire point of a gift. It communicates intimacy through specificity, however ridiculous that specificity might be.
+A toilet footstool that went viral thanks to a YouTube ad featuring a rainbow-pooping unicorn. It's ergonomically designed to improve your bathroom posture. It works. Doctors endorse it. It's one of the highest-reviewed bathroom products on the internet. Who's laughing now?
 
-**The Collector's Impulse**
+**The Inflatable T-Rex Costume ($35.99)**
 
-Then there are the people who buy weird gadgets purely to own them — to experience the unboxing, the setup, the brief period of novelty before the thing joins the graveyard of barely-used tech in the bottom drawer. These are not irresponsible consumers. They are experience collectors. The gadget is just a vehicle for the story: *I once had a machine that automatically buttered my toast.*
+A full-body battery-powered inflatable dinosaur suit. It comes with a fan that keeps you permanently puffed to T-Rex proportions. It is approved for all occasions. It falls over a lot. Completely worth it.
 
-**The Guess The Price Effect**
+**The Ostrichpillow ($99.00)**
 
-Playing games like Guess The Price reveals something fascinating about our relationship with weird products. When you discover that a motorised ice cream cone holder retails for $14.99, your brain does something interesting — it simultaneously thinks "that's ridiculous" and "I kind of want one." The price reveal reframes the object. Suddenly it has context, market value, a place in the world.
+A head-enclosing fabric nap pod that blocks light and muffles sound while you sleep sitting up. It looks like you're being consumed by a pillow. It was actually used by NASA researchers. It costs $99. That's a lot for a very soft head prison, but apparently, a well-rested engineer is worth it.
 
-That's the magic of weird gadgets. They don't just exist as products. They exist as proof that human creativity, ingenuity, and sheer stubbornness to solve non-problems knows absolutely no bounds.
+**The Nicolas Cage Sequin Pillow ($13.99)**
 
-And honestly? We love them for it.`,
+A reversible sequin pillowcase. On one side, calm and composed Nicolas Cage. Stroke the sequins the other way: full CAGE RAGE. It's sold by the thousands. It is a masterwork of consumer product design.
+
+**The Giant 5-Pound Gummy Bear ($34.99)**
+
+This is equal to 1,400 regular gummy bears compressed into the shape of one enormous bear. It has 12,600 calories. It stares at you with hollow sugar eyes. It comes in a box. You will regret buying it. You will also not regret buying it.
+
+**The Finger Hands 5-Pack ($5.45)**
+
+Tiny rubber hands that fit over each of your fingertips, giving your fingers their own tiny hands. This is either deeply philosophical or deeply unhinged. Probably both. For under six dollars, it is the cheapest existential crisis available online.
+
+**The Electric Banana Slicer Pro ($49.99)**
+
+A motorised appliance with three speed settings. For slicing bananas. Electrically. With speed settings. The regular banana slicer costs $6.86. This one costs $49.99. The gap between those two prices is a meditation on consumerism.
+
+**So, What Does This All Mean?**
+
+It means that somewhere between utility and absurdity, there's a massive and thriving market for products that make us laugh, confuse us, or simply delight us with their existence. Prices for weird products range from a few dollars to nearly a hundred — and surprisingly, they don't always correlate with how weird the product is.
+
+Think you can guess what any of these cost just from the description? You might be more wrong than you think.
+
+**👉 Test your price intuition right now at [TheGuessPrice.com](/) — 5 rounds of real products, real prices, and a score that will humble you.**`
   },
   {
-    slug: "how-to-win-at-guess-the-price",
-    emoji: "🎯",
-    title: "How to Win at Guess The Price",
-    subtitle: "Insider strategies, mental models, and dirty tricks for becoming a true Price Oracle.",
-    date: "May 2026",
-    readTime: "4 min read",
-    content: `Most people approach Guess The Price the same way they approach a multiple choice exam they didn't study for: gut feeling, a quick prayer, and vague optimism. That's fine. But if you want to consistently hit those top scores — the coveted S-rank, Price Oracle status — you need a system.
+    slug: "why-we-are-bad-at-guessing-prices",
+    title: "Why We're So Bad at Guessing Prices (The Psychology Explained)",
+    date: "June 8, 2025",
+    excerpt: "Anchoring bias, the decoy effect, luxury branding — our brains are wired to get prices wrong. Here's the fascinating psychology behind why.",
+    metaDescription: "Explore the psychology behind price perception — anchoring bias, the decoy effect, and how luxury branding fools your brain into misjudging costs.",
+    content: `You're standing in a supermarket, looking at two bottles of olive oil. One costs $4. One costs $24. You instinctively assume the $24 bottle tastes better. But here's the thing — you've never tasted either of them, and you have absolutely no way of knowing. You're not being irrational. You're being human.
 
-**Understand the Logarithmic Scale**
+Our ability to accurately perceive prices is surprisingly bad, and the reasons why are deeply fascinating.
 
-The slider in Guess The Price isn't linear. It's logarithmic, which means the left half of the slider covers $0.01 to roughly $100, and the right half covers $100 to $10,000. This is intentional — it mirrors how prices actually work in the real world. Most products cluster between $5 and $500, not $0 and $10,000.
+**The Anchoring Effect**
 
-Practical implication: be very precise on the left side of the slider. A small movement near the bottom dramatically changes your price estimate. Near the top, you have more room for error. Don't treat it like a linear scale or you'll consistently undershoot cheap items and overshoot expensive ones.
+The single most powerful force distorting your price guesses is anchoring. When you see a price — any price — it becomes a reference point that influences every judgment you make afterwards. Walk into a luxury watch store and see a $50,000 Rolex first, and suddenly a $3,000 watch feels like a bargain. See a $30 watch first, and the same $3,000 watch feels outrageously expensive.
 
-**Anchor to Product Categories**
+Retailers exploit this constantly. That "original price" crossed out next to a "sale price"? Pure anchoring. You're not being told the item is good. You're being given a reference point so the current price feels like a steal.
 
-Before you move the slider, categorise the product mentally. Kitchen gadget? Probably $15–$80. Consumer electronics? $50–$500. Luxury item from a brand you've heard of? $200+. Weird novelty from a Spencer's-type store? $10–$40. Artisan craft product from Etsy? Could be $30 or $300 — widen your uncertainty range.
+**The Decoy Effect**
 
-Your first instinct is usually in the right ballpark. The mistake most players make is *adjusting too far* from that initial anchor. Research in behavioural economics consistently shows that people anchor well but adjust poorly. Trust your first number more than you think you should.
+This is one of the sneakiest tricks in pricing psychology. Imagine a cinema offers a small popcorn for $3 and a large for $7. Most people go small. Now add a medium for $6.50. Suddenly, the large looks like incredible value — and large popcorn sales spike. The medium exists not to be bought, but to make the large feel rational.
 
-**The "Could I Find This on Amazon?" Test**
+This effect shows up everywhere: subscription tiers, product bundles, and especially electronics. The mid-range option is often the decoy that makes the premium option irresistible.
 
-Products sourced from Amazon tend to occupy predictable price points: $9.99, $19.99, $29.99, $49.99. Amazon's marketplace has an almost gravitational pull toward these round-number price points because of how conversion rates work. If a product looks like it belongs on Amazon, guess one of those numbers.
+**Luxury Branding and the Illusion of Quality**
 
-Etsy products break this rule completely. Handmade, artisan, or custom items can range wildly. Apply a "labour premium" — if it looks handmade, add 40–60% to your intuitive estimate.
+Here's where it gets truly wild. Studies consistently show that people rate identical wines higher when they're told they're expensive. The same goes for painkillers — branded pills labeled at a higher price are perceived to work better than unbranded identical pills, even in placebo-controlled trials.
 
-**Luxury Brand Heuristics**
+Luxury brands know this. A Montblanc ballpoint pen ($520) and a Bic ballpoint pen ($1) both put ink on paper in exactly the same way. But the Montblanc buyer isn't just buying ink delivery — they're buying the feeling the price tag generates in their brain. Neuroscience actually backs this up: higher prices activate reward pathways in the brain even before the product is used.
 
-When a product is from a luxury brand (Louis Vuitton, Hermès, Baccarat), the price is almost always higher than your intuition suggests. These brands charge not for the product but for the signal the product sends. A crystal vase that costs $40 to produce retails for $800 because of what owning it communicates.
+**The Familiarity Problem**
 
-Rule of thumb: if you recognise the brand as luxury, multiply your initial instinct by 3.
+We're also terrible at guessing prices for products we rarely buy. You probably have a decent mental model for grocery prices because you buy groceries weekly. But ask you to guess the price of a pineapple corer, an inflatable sumo suit, or a DNA testing kit, and your brain has almost nothing to anchor to. You'll make a guess based on vibes, loose category associations, and what the product looks like it should cost — which is often very different from what it does cost.
 
-**Manage Your Uncertainty**
+**The "It Looks Cheap" Fallacy**
 
-The scoring system rewards accuracy exponentially — being 5% off is dramatically better than being 50% off. So on products where you're genuinely uncertain, resist the urge to guess an extreme. A moderate, hedged estimate almost always beats a bold, wrong one.
+Small, light, or simple-looking objects trigger underestimation. Large, heavy, or complicated-looking ones trigger overestimation. A tiny smart mug (Ember, $97.99) looks like it should cost $20. A giant inflatable garden flamingo looks like it should cost hundreds but often costs under $40. We're judging price by appearance, not by the actual economics of manufacturing, licensing, or brand markup.
 
-**Practice the Mental Simulation**
+**What This Means for You**
 
-Before playing, spend five minutes browsing Amazon's "Movers & Shakers" or Etsy's trending items. Just scrolling through real products and real prices recalibrates your internal price model. Think of it as tuning an instrument before the performance.
+Being aware of these biases doesn't make you immune to them — they're deeply wired into how human cognition works. But it does mean you can catch yourself. When something feels expensive because of how it looks, or cheap because the retailer next to it is more expensive, you're probably being anchored.
 
-The Price Oracle title is waiting. Go claim it.`,
+The most accurate price guessers think in terms of materials, manufacturing complexity, and comparable products — not feelings.
+
+**👉 Think you can beat your own biases? Play [TheGuessPrice.com](/) and find out. 5 rounds, real products, real prices.**`
   },
   {
-    slug: "most-absurdly-priced-products",
-    emoji: "💸",
-    title: "The Most Absurdly Priced Products We've Ever Featured",
-    subtitle: "A love letter to the products that made us say 'wait, how much?!'",
-    date: "May 2026",
-    readTime: "3 min read",
-    content: `Every product in our game passes one essential test before inclusion: it has to make a reasonable person's jaw drop, eyebrow raise, or head tilt. The price has to feel either shockingly cheap or shockingly expensive relative to what the product actually is. Over time, we've assembled a hall of fame of the most gloriously absurd items we've encountered.
+    slug: "expensive-amazon-products",
+    title: "10 Amazon Products That Are Way More Expensive Than You'd Think",
+    date: "June 15, 2025",
+    excerpt: "Amazon isn't just cheap gadgets and toilet paper. Some of the most surprising high-ticket items on the platform will make your jaw drop.",
+    metaDescription: "Think Amazon is all bargains? Think again. These 10 surprisingly expensive Amazon products will completely recalibrate your price expectations.",
+    content: `When most people think of Amazon, they think of affordable convenience — next-day delivery, competitive prices, a warehouse-scale race to the bottom. And for most things, that's true. But Amazon also hosts some of the most eye-wateringly expensive products available to consumers, and some of them are genuinely surprising.
 
-**The $1,000 Gold-Plated Clothespeg**
+Here are 10 Amazon products that cost way more than you'd ever guess.
 
-Somewhere in the world, there exists a luxury goods market for objects so mundane that gilding them becomes an act of performance art. Gold-plated clothes pegs. $1,000 Swiss-made bottle openers. A $450 sterling silver stapler. These products exist not to be used but to be *seen being used*, or more accurately, to be seen sitting on a marble countertop while guests politely don't ask what they cost.
+**1. Snoo Smart Sleeper Baby Bassinet — $1,895**
 
-The psychology here is pure Veblen good territory. The higher the price, the more desirable it becomes — not despite the price but *because of it*. You're not buying a stapler. You're buying a conversation piece and a status signal compressed into stainless steel.
+The Snoo is a robotic bassinet that uses microphone sensors to detect your baby's cries and automatically responds with motion and white noise to soothe them back to sleep. It's a legitimate product with genuine clinical backing. It is also nearly two thousand dollars. For a crib. That your child will use for approximately six months.
 
-**The Gadget That Does One Thing**
+**2. LG CineBeam S 4K Laser Projector — $1,299**
 
-On the opposite end of the absurdity spectrum: the hyper-specialised single-function gadget. A machine whose entire purpose is to core and slice apples. A device that exists solely to dispense perfectly measured amounts of mayonnaise. A $70 electric jar opener. Not a multi-tool. Not a kitchen Swiss Army knife. Just: it opens jars. Nothing else.
+An ultra short-throw 4K laser projector that you place inches from any wall to create a 100-inch cinema display. It's stunning technology and a legitimate alternative to a large TV. At $1,299, it's not a bargain, but it is genuinely impressive. Most people guess it costs $300-$400.
 
-There's a weirdly pure beauty to these objects. They commit completely to solving exactly one problem with maximum engineering dedication. The obsessive specificity is almost admirable.
+**3. Ember Temperature Control Smart Mug 2 — $97.99**
 
-**The Luxury Food Items**
+A mug. That keeps your coffee at exactly the temperature you set, via a smartphone app. For $97.99. It works flawlessly, has a cult following, and genuinely changes how you drink hot beverages. But it's still a hundred dollars for a mug, and most people guess it costs about $30.
 
-Wagyu beef hot dogs. Truffle-infused instant ramen. Gold leaf-dusted chocolate bars. The premium food market has discovered that people will pay extraordinary prices for ordinary food made extraordinary through provenance, ingredient sourcing, or sheer audacity. We've featured items where the price-per-bite exceeds what most people spend on an entire meal.
+**4. AncestryDNA Genetic Test Kit — $59**
 
-The fascinating thing is that these items often *do* taste better. Sometimes significantly so. But the price-to-pleasure ratio curves steeply — the difference between a $5 chocolate bar and a $20 one is noticeable; the difference between a $20 bar and a $200 one is mostly psychology.
+Spit in a tube, mail it to a lab, and discover your full ethnic breakdown, DNA relatives, and possibly family secrets you weren't ready for. At $59 it's not that expensive, but most people assume it costs hundreds of dollars because the technology sounds so sophisticated. It's actually one of the best-value products in this list.
 
-**The Products That Cost Nothing**
+**5. Govee RGBIC Neon Rope Light 32.8ft — $119.99**
 
-The reverse shock is just as satisfying. A beautifully packaged, seemingly premium product that turns out to cost $3.49. A sophisticated-looking skincare device that's $8. These items reveal something honest about branding, packaging, and perception. We judge price by appearance, not by value — and when the appearance misleads us, it's a small, delightful lesson in our own cognitive shortcuts.
+App-controlled flexible LED neon strip lights that work with Alexa and Google Home. You can bend them into any shape, set them to music, or schedule them. At $120 for 32 feet of smart neon, it's actually reasonable — but it consistently surprises people who expect LED strips to cost $20.
 
-**Why It Matters**
+**6. Ninja Creami Ice Cream Maker — $169.99**
 
-Playing with price perception — which is essentially what Guess The Price is all about — teaches us to look at products differently. To separate the object from the marketing around it. To ask: what is this actually worth, and why?
+You freeze a base overnight, insert the frozen puck, press a button, and the Ninja Creami turns it into ice cream, gelato, or sorbet in two minutes. It has a cult following online and genuine recipe communities. Most people look at it and guess it costs $40-$50. It costs $169.99.
 
-These questions don't have easy answers. But asking them is the first step to becoming a genuinely savvy consumer. Even if the next step is buying a gold-plated clothespeg anyway, just to see what the fuss is about.`,
+**7. Fujifilm Instax Mini 12 Camera — $69.99**
+
+An instant film camera that prints physical credit-card-sized photos on the spot. Pastel colours, selfie mirror included. At $70 for the camera, it's reasonable — but then the film packs cost $10-$15 each for 10 shots. The camera is a gateway to an expensive ongoing habit.
+
+**8. Razer Iskur V2 X Gaming Chair — $299**
+
+An ergonomic gaming chair with built-in lumbar support, high-density foam, and a 152-degree recline. At $299 it's mid-range for gaming chairs, but people who aren't in the gaming chair market are often shocked that chairs with RGB lighting cost the same as a flight to Europe.
+
+**9. Govee Floor Lamp RGBIC — $79.99**
+
+A smart LED floor lamp with 16 million colours, music sync mode, and full app control. It looks like a statement piece from the future. At $80 it's a fair price, but people who see it online usually assume it's $200+. The actual price is the pleasant surprise here.
+
+**10. Montblanc Meisterstuck Classique Ballpoint Pen — $520**
+
+A ballpoint pen. Resin barrel. Gold-plated fittings. Writes identically to a Bic. $520. The Montblanc Meisterstuck is the definitive luxury pen — the one executives use to sign things in films. It is a perfectly crafted object. It also puts ink on paper. For five hundred and twenty dollars. Most people guess $80-$150.
+
+**The Takeaway**
+
+Amazon's price range spans from $1.99 phone cables to $1,895 robot cribs, and everything in between. The gap between what something looks like it should cost and what it actually costs is often enormous — and it goes both ways.
+
+**👉 Think you can guess what these products cost just from a description? Put your instincts to the test at [TheGuessPrice.com](/).**`
   },
+  {
+    slug: "how-to-get-good-at-guessing-prices",
+    title: "How to Actually Get Good at Guessing Prices",
+    date: "June 22, 2025",
+    excerpt: "Price guessing is a skill, not luck. Here are the practical mental models that will make you dramatically better at estimating what things cost.",
+    metaDescription: "A practical guide to getting better at guessing prices. Learn about anchor prices, material costs, brand markup, and other mental models for accurate price estimation.",
+    content: `Most people treat price guessing as pure luck — a random stab in the dark with no real strategy. But it doesn't have to be. Price estimation is a genuine skill, and like most skills, it improves dramatically with the right mental models and a bit of deliberate practice.
+
+Here's how to actually get good at it.
+
+**1. Build a Library of Anchor Prices**
+
+The foundation of good price estimation is having strong reference points. Experienced price guessers unconsciously maintain a mental database of benchmark costs: a decent kitchen knife is $30-$80, a basic Bluetooth speaker is $20-$40, a quality handbag is $50-$500 depending on brand tier.
+
+The more of these anchors you have, the more accurately you can triangulate when you encounter something new. When you buy something, make a habit of noting its price even if you didn't guess — over time, this builds your internal pricing library.
+
+**2. Think About Materials and Manufacturing**
+
+Before guessing, ask yourself: what is this actually made of, and how hard was it to make?
+
+A wooden spoon and a titanium chef's knife are both kitchen tools, but the manufacturing complexity is completely different. Glass costs more than plastic. Metal costs more than plastic. Microelectronics cost more than mechanical parts. Hand-crafted or hand-painted means labour costs. Silicone food-grade molds are cheaper than precision-machined steel.
+
+Breaking a product down to its materials often gives you a much more accurate cost floor than going on aesthetics alone.
+
+**3. Factor In Brand Markup — Then Factor It In Again**
+
+You're probably already accounting for brand premiums. You're almost certainly not accounting for them enough.
+
+A plain white t-shirt from a high-street brand costs $15. The same weight of cotton from a luxury brand costs $150. The fabric is identical. What you're paying for is the brand's history, marketing spend, perceived exclusivity, and the neurological reward response that comes from wearing something "expensive."
+
+This markup is real and it compounds. A $10 candle becomes $60 in luxury packaging with a French name. A $5 perfume bottle becomes $200 with a celebrity endorsement. When in doubt on aspirational or lifestyle products, multiply your initial guess by three.
+
+**4. Consider the Niche Tax**
+
+The more specific a product's purpose, the more it usually costs — because the market is smaller. A general kitchen knife has massive competition, driving prices down. A dedicated strawberry huller serves one niche, faces less competition, and carries a premium despite being simpler.
+
+Highly specific tools, specialist hobby equipment, professional niche gadgets, and products aimed at enthusiast communities often cost significantly more than their apparent simplicity would suggest. The niche tax is real.
+
+**5. Use the "Who Buys This?" Test**
+
+Think about the target buyer for a product. Products aimed at parents of newborns command premiums because sleep-deprived people will pay anything for a solution. Products aimed at hobbyists who've already invested in a passion (photographers, coffee enthusiasts, gamers) sit in a different price bracket than mainstream consumer goods.
+
+A baby sleep gadget that costs $200 wouldn't exist if parents didn't buy it. A $150 pour-over coffee setup wouldn't exist if coffee enthusiasts didn't buy it. Who the product is designed for tells you a lot about what the manufacturer believes they can charge.
+
+**6. The "Boring vs. Exciting" Heuristic**
+
+Counterintuitively, boring-looking products often cost more than exciting-looking ones. A sleek matte-black ergonomic office chair is often pricier than a flashy gaming chair covered in RGB lights, because the target market (corporate professionals) has more disposable income and higher quality expectations.
+
+Conversely, novelty products — things that look amazing but serve no serious purpose — are often cheaper than they appear, because the manufacturing costs are low and the market is novelty-seekers rather than serious buyers.
+
+**7. Practice Deliberately**
+
+The fastest way to improve is deliberate exposure with feedback. When you're shopping online, before you click through to the price, write down your guess. Then compare. Over time, you'll notice patterns: you consistently underestimate electronics, overestimate kitchen gadgets, or misjudge Etsy products.
+
+The brain is remarkably good at calibrating with honest feedback. The key is to actually make a committed guess before seeing the answer — not to form a vague impression and then confirm it.
+
+**The Bottom Line**
+
+Good price guessing isn't magic. It's the accumulated result of material awareness, category knowledge, brand premium understanding, and honest practice. The more you do it, the better you get.
+
+**👉 Ready to put these tips to the test? Play [TheGuessPrice.com](/) — 5 rounds of real products, real prices, and a score that will show you exactly where your calibration needs work.**`
+  }
 ];
+
+export function getPostBySlug(slug) {
+  return BLOG_POSTS.find(p => p.slug === slug) || null;
+}
