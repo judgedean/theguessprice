@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import NavBar from "@/components/NavBar";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar } from "lucide-react";
 import ReactMarkdown from "react-markdown";
@@ -32,19 +33,7 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Nav */}
-      <header className="border-b border-border/60 bg-card/30 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
-          <Link to="/" className="flex items-center gap-2">
-            <span className="text-neon font-mono font-bold text-lg neon-text">$</span>
-            <span className="font-bold font-grotesk tracking-tight text-foreground">Guess The Price</span>
-          </Link>
-          <nav className="flex items-center gap-4 text-sm">
-            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors font-mono">Game</Link>
-            <Link to="/blog" className="text-neon font-mono font-semibold">Blog</Link>
-          </nav>
-        </div>
-      </header>
+      <NavBar />
 
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-12">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>

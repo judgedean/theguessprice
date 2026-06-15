@@ -1,9 +1,10 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
 import { BLOG_POSTS } from "@/data/blogPosts";
 import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 
 export default function Blog() {
   useEffect(() => {
@@ -15,19 +16,7 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Nav */}
-      <header className="border-b border-border/60 bg-card/30 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
-          <Link to="/" className="flex items-center gap-2">
-            <span className="text-neon font-mono font-bold text-lg neon-text">$</span>
-            <span className="font-bold font-grotesk tracking-tight text-foreground">Guess The Price</span>
-          </Link>
-          <nav className="flex items-center gap-4 text-sm">
-            <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors font-mono">Game</Link>
-            <Link to="/blog" className="text-neon font-mono font-semibold">Blog</Link>
-          </nav>
-        </div>
-      </header>
+      <NavBar />
 
       <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-12">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>

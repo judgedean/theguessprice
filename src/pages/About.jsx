@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
 const sections = [
@@ -43,20 +44,7 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Nav */}
-      <header className="border-b border-border/60 bg-card/30 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="text-neon font-mono font-bold text-lg neon-text">$</span>
-            <Link to="/" className="font-bold font-grotesk tracking-tight text-foreground hover:text-neon transition-colors">Guess The Price</Link>
-          </div>
-          <nav className="flex items-center gap-5 text-xs font-mono text-muted-foreground">
-            <Link to="/" className="hover:text-neon transition-colors">Game</Link>
-            <Link to="/blog" className="hover:text-neon transition-colors">Blog</Link>
-            <Link to="/about" className="text-neon">About</Link>
-          </nav>
-        </div>
-      </header>
+      <NavBar />
 
       {/* Content */}
       <main className="flex-1 max-w-2xl mx-auto w-full px-6 py-16">

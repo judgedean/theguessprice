@@ -1,8 +1,8 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
 import { getRandomProducts } from "@/data/products";
 import { priceToSlider } from "@/lib/gameUtils";
+import NavBar from "@/components/NavBar";
 import RoundBadge from "@/components/game/RoundBadge";
 import ProductCard from "@/components/game/ProductCard";
 import PriceSlider from "@/components/game/PriceSlider";
@@ -74,27 +74,12 @@ export default function Game() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Top nav bar */}
-      <header className="border-b border-border/60 bg-card/30 backdrop-blur-sm sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="text-neon font-mono font-bold text-lg neon-text">$</span>
-            <span className="font-bold font-grotesk tracking-tight text-foreground">Guess The Price</span>
-            <span className="hidden sm:inline text-xs font-mono text-muted-foreground border border-border rounded px-1.5 py-0.5">🇺🇸 USD</span>
-          </div>
-          {phase !== "results" && (
-            <RoundBadge current={round} total={TOTAL_ROUNDS} />
-          )}
-          <div className="w-28 flex items-center justify-end gap-2">
-            <Link to="/blog" className="hidden sm:inline text-xs font-mono text-muted-foreground hover:text-neon transition-colors">Blog</Link>
-            <Link to="/about" className="hidden sm:inline text-xs font-mono text-muted-foreground hover:text-neon transition-colors">About</Link>
-            <MuteButton />
-            {phase !== "results" && completedRounds.length > 0 && (
-              <ScoreStrip rounds={completedRounds} currentRound={round} />
-            )}
-          </div>
-        </div>
-      </header>
+      <NavBar>
+        {phase !== "results" && (
+          <RoundBadge current={round} total={TOTAL_ROUNDS} />
+        )}
+        <MuteButton />
+      </NavBar>
 
       {/* Main layout */}
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-8 flex gap-6 items-start justify-center">
