@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
 import { Share2, Copy, Check } from "lucide-react";
 import { getFinalGrade, formatPrice, calculateScore, sliderToPrice, getScoreLabel, getPurchaseLink } from "@/lib/gameUtils";
+import { saveDailyChallengeResult, formatChallengeDate } from "@/lib/dailyChallenge";
 import SourceButton from "@/components/game/SourceButton";
 import { playSound } from "@/lib/sounds";
 
@@ -14,12 +15,27 @@ const gradeColors = {
   red: "text-red-400",
 };
 
-export default function FinalResults({ rounds, onRestart }) {
+export default function FinalResults({ rounds, onRestart, mode = "quick" }) {
   const totalScore = rounds.reduce((sum, r) => sum + calculateScore(sliderToPrice(r.sliderValue), r.product.price), 0);
   const { grade, label, color } = getFinalGrade(totalScore);
   const [copied, setCopied] = useState(false);
+  const [streak, setStreak] = useState(0);
 
-  const shareMessage = `I just scored ${totalScore} pts and ranked as a '${label}' on Guess The Price! 🎯 Can you beat me? Play here: ${window.location.href}`;
+  const isDaily = mode === "daily";
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
+  const shareMessage = isDaily
+    ? `I scored ${totalScore}/1000 on TheGuessPrice Daily Challenge (${formatChallengeDate(today)}) 🎯 Can you beat me? theguessprice.com`
+    : `I just scored ${totalScore} pts and ranked as a '${label}' on Guess The Price! 🎯 Can you beat me? Play here: ${window.location.href}`;
+
+  useEffect(() => {
+    if (isDaily) {
+      const s = saveDailyChallengeResult(totalScore);
+      setStreak(s);
+    }
+  }, []);
 
   const handleShare = async () => {
     const canNativeShare = typeof navigator.share === "function";
@@ -69,7 +85,7 @@ export default function FinalResults({ rounds, onRestart }) {
     >
       {/* Header */}
       <div className="text-center space-y-3">
-        <div className="text-xs font-mono text-muted-foreground uppercase tracking-widest">Game Over</div>
+        <div className="text-xs font-mono text-muted-foreground uppercase tracking-widest">{isDaily ? "Daily Challenge Complete" : "Game Over"}</div>
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
@@ -96,6 +112,23 @@ export default function FinalResults({ rounds, onRestart }) {
           style={{ boxShadow: "0 0 10px hsl(142 100% 50% / 0.7)" }}
         />
       </div>
+
+      {/* Daily challenge info */}
+      {isDaily && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="rounded-xl border border-neon/40 bg-card p-5 space-y-3 text-center"
+        >
+          <div className="text-2xl font-mono font-bold text-neon neon-text">
+            🔥 Day streak: {streak}
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Come back tomorrow ({formatChallengeDate(tomorrow)}) for a new challenge!
+          </p>
+        </motion.div>
+      )}
 
       {/* Round breakdown */}
       <div className="rounded-xl border border-border bg-card overflow-hidden">
@@ -177,7 +210,7 @@ export default function FinalResults({ rounds, onRestart }) {
           onClick={onRestart}
           className="flex-1 py-4 rounded-xl font-bold text-sm tracking-widest uppercase font-mono bg-neon text-primary-foreground neon-glow hover:opacity-90 transition-opacity"
         >
-          Play Again ↺
+          {isDaily ? "Back to Home" : "Play Again ↺"}
         </button>
         <button
           onClick={handleShare}
