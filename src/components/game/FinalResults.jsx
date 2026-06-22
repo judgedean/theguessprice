@@ -27,7 +27,7 @@ export default function FinalResults({ rounds, onRestart, mode = "quick" }) {
   tomorrow.setDate(tomorrow.getDate() + 1);
 
   const shareMessage = isDaily
-    ? `I scored ${totalScore}/1000 on TheGuessPrice Daily Challenge (${formatChallengeDate(today)}) 🎯 Can you beat me? theguessprice.com`
+    ? `I scored ${totalScore}/500 on TheGuessPrice Daily Challenge (${formatChallengeDate(today)}) 🎯 Can you beat me? theguessprice.com`
     : `I just scored ${totalScore} pts and ranked as a '${label}' on Guess The Price! 🎯 Can you beat me? Play here: ${window.location.href}`;
 
   useEffect(() => {
