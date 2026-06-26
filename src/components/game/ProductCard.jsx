@@ -35,7 +35,7 @@ export default function ProductCard({ product }) {
       <div className="h-0.5 w-full bg-gradient-to-r from-transparent via-neon to-transparent opacity-60" />
 
       {/* Product image */}
-      <div className="w-full bg-muted flex items-center justify-center overflow-hidden p-4" style={{ maxHeight: "300px" }}>
+      <div className="w-full bg-muted flex items-center justify-center overflow-hidden" style={{ minHeight: "350px", height: "min(400px, 50vh)" }}>
         {imgError ? (
           <span className="text-8xl select-none">{product.emoji}</span>
         ) : imgSrc ? (
@@ -43,8 +43,8 @@ export default function ProductCard({ product }) {
             src={imgSrc}
             alt={product.name}
             onError={() => setImgError(true)}
-            className="w-full"
-            style={{ objectFit: "contain", maxHeight: "300px", borderRadius: "0.5rem" }}
+            className="w-full h-full"
+            style={{ objectFit: "contain" }}
           />
         ) : (
           <span className="text-8xl select-none animate-pulse">{product.emoji}</span>
