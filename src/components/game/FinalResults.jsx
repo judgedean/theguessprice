@@ -17,13 +17,13 @@ const gradeColors = {
 
 export default function FinalResults({ rounds, onRestart, mode = "quick" }) {
   const totalScore = rounds.reduce((sum, r) => sum + calculateScore(sliderToPrice(r.sliderValue), r.product.price), 0);
-  const { grade, label, color } = getFinalGrade(totalScore, mode);
-  const maxScore = isDaily ? 500 : 1000;
-  const verdict = `${label} ${grade}`;
   const [copied, setCopied] = useState(false);
   const [streak, setStreak] = useState(0);
 
   const isDaily = mode === "daily";
+  const { grade, label, color } = getFinalGrade(totalScore, mode);
+  const maxScore = isDaily ? 500 : 1000;
+  const verdict = `${label} ${grade}`;
   const today = new Date();
   const tomorrow = new Date(today);
   tomorrow.setDate(tomorrow.getDate() + 1);
