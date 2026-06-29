@@ -18,7 +18,7 @@ export default function HomeScreen({ onStartDaily, onStartQuick }) {
       <div className="text-center space-y-2 pt-4">
         <div className="text-6xl">🎯</div>
         <h1 className="text-3xl font-bold font-grotesk tracking-tight">
-          Guess The <span className="text-neon neon-text">Price</span>
+          TheGuess<span className="text-neon neon-text">Price</span>
         </h1>
         <p className="text-sm text-muted-foreground font-mono">
           Real weird products. Real prices. How well do you know what things cost?

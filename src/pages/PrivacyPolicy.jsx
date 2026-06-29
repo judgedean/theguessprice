@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
         <div className="space-y-6 text-sm text-muted-foreground leading-relaxed">
           <section className="space-y-2">
             <h2 className="text-base font-bold text-foreground">1. Information We Collect</h2>
-            <p>Guess The Price is a browser-based game. We do not require you to create an account or submit any personal information to play. We may collect anonymous, aggregated usage data (such as page views and game sessions) through standard analytics tools to help improve the experience.</p>
+            <p>TheGuessPrice is a browser-based game. We do not require you to create an account or submit any personal information to play. We may collect anonymous, aggregated usage data (such as page views and game sessions) through standard analytics tools to help improve the experience.</p>
           </section>
 
           <section className="space-y-2">

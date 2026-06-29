@@ -8,10 +8,10 @@ import NavBar from "@/components/NavBar";
 
 export default function Blog() {
   useEffect(() => {
-    document.title = "Blog | Guess The Price";
+    document.title = "Blog | TheGuessPrice";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) { meta = document.createElement("meta"); meta.name = "description"; document.head.appendChild(meta); }
-    meta.content = "Tips, psychology, and curiosities about prices and consumer behaviour. The Guess The Price blog.";
+    meta.content = "Tips, psychology, and curiosities about prices and consumer behaviour. The TheGuessPrice blog.";
   }, []);
 
   return (

@@ -17,7 +17,7 @@ export default function NavBar({ children }) {
         <div className="flex items-center gap-2">
           <span className="text-neon font-mono font-bold text-lg neon-text">$</span>
           <Link to="/" className="font-bold font-grotesk tracking-tight text-foreground hover:text-neon transition-colors">
-            Guess The Price
+            TheGuessPrice
           </Link>
           <span className="hidden sm:inline text-xs font-mono text-muted-foreground border border-border rounded px-1.5 py-0.5">🇺🇸 USD</span>
         </div>

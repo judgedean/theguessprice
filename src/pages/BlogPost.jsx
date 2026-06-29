@@ -13,12 +13,12 @@ export default function BlogPost() {
 
   useEffect(() => {
     if (post) {
-      document.title = `${post.title} | Guess The Price`;
+      document.title = `${post.title} | TheGuessPrice`;
       let meta = document.querySelector('meta[name="description"]');
       if (!meta) { meta = document.createElement("meta"); meta.name = "description"; document.head.appendChild(meta); }
       meta.content = post.metaDescription;
     } else {
-      document.title = "Post Not Found | Guess The Price";
+      document.title = "Post Not Found | TheGuessPrice";
     }
   }, [post]);
 

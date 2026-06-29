@@ -20,7 +20,7 @@ export default function AffiliateDisclosure() {
         <div className="space-y-6 text-sm text-muted-foreground leading-relaxed">
           <section className="space-y-2">
             <h2 className="text-base font-bold text-foreground">What This Means</h2>
-            <p>Guess The Price participates in affiliate marketing programs, including the Amazon Associates Programme. This means that when you click certain product links on this site and make a purchase, we may receive a small commission — at absolutely no extra cost to you.</p>
+            <p>TheGuessPrice participates in affiliate marketing programs, including the Amazon Associates Programme. This means that when you click certain product links on this site and make a purchase, we may receive a small commission — at absolutely no extra cost to you.</p>
           </section>
 
           <section className="space-y-2">

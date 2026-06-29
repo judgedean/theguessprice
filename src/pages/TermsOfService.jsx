@@ -14,12 +14,12 @@ export default function TermsOfService() {
         <div className="space-y-6 text-sm text-muted-foreground leading-relaxed">
           <section className="space-y-2">
             <h2 className="text-base font-bold text-foreground">1. Acceptance of Terms</h2>
-            <p>By accessing or using Guess The Price ("the Site"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.</p>
+            <p>By accessing or using TheGuessPrice ("the Site"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Site.</p>
           </section>
 
           <section className="space-y-2">
             <h2 className="text-base font-bold text-foreground">2. Use of the Site</h2>
-            <p>Guess The Price is provided for entertainment purposes only. You agree to use the Site only for lawful purposes and in a manner that does not infringe the rights of others or restrict their use and enjoyment of the Site.</p>
+            <p>TheGuessPrice is provided for entertainment purposes only. You agree to use the Site only for lawful purposes and in a manner that does not infringe the rights of others or restrict their use and enjoyment of the Site.</p>
           </section>
 
           <section className="space-y-2">
@@ -34,7 +34,7 @@ export default function TermsOfService() {
 
           <section className="space-y-2">
             <h2 className="text-base font-bold text-foreground">5. Intellectual Property</h2>
-            <p>All original content on this Site, including game logic, design, and copy, is the property of Guess The Price and is protected by applicable intellectual property laws. You may not reproduce or distribute any content without prior written permission.</p>
+            <p>All original content on this Site, including game logic, design, and copy, is the property of TheGuessPrice and is protected by applicable intellectual property laws. You may not reproduce or distribute any content without prior written permission.</p>
           </section>
 
           <section className="space-y-2">
@@ -44,7 +44,7 @@ export default function TermsOfService() {
 
           <section className="space-y-2">
             <h2 className="text-base font-bold text-foreground">7. Limitation of Liability</h2>
-            <p>To the fullest extent permitted by law, Guess The Price shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Site.</p>
+            <p>To the fullest extent permitted by law, TheGuessPrice shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Site.</p>
           </section>
 
           <section className="space-y-2">
