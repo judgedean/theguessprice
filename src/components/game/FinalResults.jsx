@@ -17,7 +17,9 @@ const gradeColors = {
 
 export default function FinalResults({ rounds, onRestart, mode = "quick" }) {
   const totalScore = rounds.reduce((sum, r) => sum + calculateScore(sliderToPrice(r.sliderValue), r.product.price), 0);
-  const { grade, label, color } = getFinalGrade(totalScore);
+  const { grade, label, color } = getFinalGrade(totalScore, mode);
+  const maxScore = isDaily ? 500 : 1000;
+  const verdict = `${label} ${grade}`;
   const [copied, setCopied] = useState(false);
   const [streak, setStreak] = useState(0);
 
@@ -27,8 +29,8 @@ export default function FinalResults({ rounds, onRestart, mode = "quick" }) {
   tomorrow.setDate(tomorrow.getDate() + 1);
 
   const shareMessage = isDaily
-    ? `I scored ${totalScore}/500 on TheGuessPrice Daily Challenge (${formatChallengeDate(today)}) 🎯 Can you beat me? theguessprice.com`
-    : `I just scored ${totalScore} pts and ranked as a '${label}' on Guess The Price! 🎯 Can you beat me? Play here: ${window.location.href}`;
+    ? `I got ${verdict} on TheGuessPrice Daily Challenge (${formatChallengeDate(today)}) with ${totalScore}/500 🎯 Can you beat me? theguessprice.com`
+    : `I got ${verdict} on TheGuessPrice Quick Play with ${totalScore}/1000 🎯 Can you beat me? theguessprice.com`;
 
   useEffect(() => {
     if (isDaily) {

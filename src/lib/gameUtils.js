@@ -131,11 +131,23 @@ export function getPurchaseLink(product) {
   return `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(src + " " + product.name)}`;
 }
 
-export function getFinalGrade(totalScore) {
-  const avg = totalScore / 5;
-  if (avg >= 90) return { grade: "S", label: "PRICE ORACLE", color: "neon" };
-  if (avg >= 70) return { grade: "A", label: "PRICE WIZARD", color: "green" };
-  if (avg >= 50) return { grade: "B", label: "PRICE DETECTIVE", color: "yellow" };
-  if (avg >= 30) return { grade: "C", label: "PRICE STUDENT", color: "orange" };
-  return { grade: "F", label: "PRICE DISASTER", color: "red" };
+export function getFinalGrade(totalScore, mode = "quick") {
+  if (mode === "daily") {
+    // Daily Challenge: out of 500
+    if (totalScore <= 50) return { grade: "🤦", label: "Completely Clueless", color: "red" };
+    if (totalScore <= 100) return { grade: "🛒", label: "Bargain Bin Brain", color: "red" };
+    if (totalScore <= 200) return { grade: "📚", label: "Price Padawan", color: "orange" };
+    if (totalScore <= 300) return { grade: "📈", label: "Market Aware", color: "yellow" };
+    if (totalScore <= 400) return { grade: "🤨", label: "Suspiciously Accurate", color: "green" };
+    if (totalScore <= 450) return { grade: "🔮", label: "Price Whisperer", color: "neon" };
+    return { grade: "🧠", label: "Born Knowing Prices", color: "neon" };
+  }
+  // Quick Play: out of 1000
+  if (totalScore <= 100) return { grade: "🤦", label: "Completely Clueless", color: "red" };
+  if (totalScore <= 200) return { grade: "🛒", label: "Bargain Bin Brain", color: "red" };
+  if (totalScore <= 400) return { grade: "📚", label: "Price Padawan", color: "orange" };
+  if (totalScore <= 600) return { grade: "📈", label: "Market Aware", color: "yellow" };
+  if (totalScore <= 800) return { grade: "🤨", label: "Suspiciously Accurate", color: "green" };
+  if (totalScore <= 900) return { grade: "🔮", label: "Price Whisperer", color: "neon" };
+  return { grade: "🧠", label: "Born Knowing Prices", color: "neon" };
 }
