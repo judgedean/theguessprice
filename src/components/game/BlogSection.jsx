@@ -13,7 +13,7 @@ export default function BlogSection() {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-3">
-        {blogPosts.slice(0, 3).map((post, i) => (
+        {blogPosts.slice(-3).reverse().map((post, i) => (
           <motion.div key={post.slug} whileHover={{ y: -2 }}>
             <Link
               to={`/blog/${post.slug}`}
